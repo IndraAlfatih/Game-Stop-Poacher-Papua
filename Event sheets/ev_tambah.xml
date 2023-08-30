@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_tambah</name>
+    <events>
+        <variable constant="0" name="life5" sid="886576004118046" static="0" type="number">3</variable>
+        <variable constant="0" name="life4" sid="913869713598416" static="0" type="number">5</variable>
+        <variable constant="0" name="nyawaht" sid="830626860924943" static="0" type="number">3</variable>
+        <event-block sid="644943171272832">
+            <conditions>
+                <condition behavior="Sine" id="3" name="Compare magnitude" sid="965303107523295" type="musuhtambah">
+                    <param id="0" name="Comparison">0</param>
+                    <param id="1" name="Value">50</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Sine" id="3" name="Set movement" sid="297924271117871" type="musuhtambah">
+                    <param id="0" name="Movement">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>tombol keyboard</comment>
+        <event-block sid="860113796778093">
+            <conditions>
+                <condition id="2" name="Key is down" sid="757552254564168" type="Keyboard">
+                    <param id="0" name="Key">87</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="853838277972178" type="heroTamnah">
+                    <param id="0" name="Control">2</param>
+                </action>
+                <action id="4" name="Set animation" sid="509186823561851" type="heroTamnah">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="236500691119759">
+            <conditions>
+                <condition id="2" name="Key is down" sid="284487041383892" type="Keyboard">
+                    <param id="0" name="Key">83</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="147498139566013" type="heroTamnah">
+                    <param id="0" name="Control">3</param>
+                </action>
+                <action id="4" name="Set animation" sid="422618710930939" type="heroTamnah">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276777324530891">
+            <conditions>
+                <condition id="2" name="Key is down" sid="832922742324499" type="Keyboard">
+                    <param id="0" name="Key">65</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="384997459174674" type="heroTamnah">
+                    <param id="0" name="Control">0</param>
+                </action>
+                <action id="4" name="Set animation" sid="512038433479724" type="heroTamnah">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="954467916802094">
+            <conditions>
+                <condition id="2" name="Key is down" sid="539477112380777" type="Keyboard">
+                    <param id="0" name="Key">68</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="8Direction" id="7" name="Simulate control" sid="468456307834621" type="heroTamnah">
+                    <param id="0" name="Control">1</param>
+                </action>
+                <action id="4" name="Set animation" sid="791496582336771" type="heroTamnah">
+                    <param id="0" name="Animation">&quot;jalan&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350749194312943">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="158843860267060" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="734282220015129" type="musuhtambah">
+                    <param id="0" name="Object">peluruTambah</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>hero destroy</comment>
+        <event-block sid="628431885715380">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="686370088835434" type="peluruTambah">
+                    <param id="0" name="Object">heroTamnah</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-11" name="Subtract from" sid="838592162562205" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Destroy" sid="150163783094753" type="peluruTambah" />
+                <action id="0" name="Spawn another object" sid="829689962472285" type="heroTamnah">
+                    <param id="0" name="Object">sangue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="782633655629600">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="186485188373484" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="347019328189108" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="176777631251388" type="nyawa">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="896169452635607" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>restart</comment>
+        <event-block sid="781658652567558">
+            <conditions>
+                <condition id="17" name="On tap object" sid="807957652866482" type="Touch">
+                    <param id="0" name="Object">menumain</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="675874568157091" type="System">
+                    <param id="0" name="Layout">map</param>
+                </action>
+                <action id="6" name="Stop" sid="817489179559986" type="Audio">
+                    <param id="0" name="Tag">&quot;in&quot;</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="235499934420027" type="System" />
+            </actions>
+        </event-block>
+        <event-block sid="840844744360268">
+            <conditions>
+                <condition id="17" name="On tap object" sid="868426563432748" type="Touch">
+                    <param id="0" name="Object">restart</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="792883882969834" type="heroTamnah">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="607857680325451" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="768599940774477" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Value">3</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="286674288308639" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="167336352346805">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="762397024340574" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="151265410107855" type="Audio">
+                    <param id="0" name="Audio file">INTROO</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;in&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="741931569151149" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="771647231763280" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="308496802419850" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-21" name="Reset global variables" sid="932093252962318" type="System" />
+            </actions>
+        </event-block>
+        <comment>analog</comment>
+        <event-block sid="823533790803044">
+            <conditions />
+            <actions>
+                <action id="-3" name="Set position" sid="975113479619059" type="gamepad_middle">
+                    <param id="0" name="X">gamepad1.X</param>
+                    <param id="1" name="Y">gamepad1.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="821404371019243">
+            <conditions>
+                <condition behavior="DragDrop" id="0" name="Is dragging" sid="110229040861323" type="gamepad_middle" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="762293628941219" type="gamepad_middle">
+                    <param id="0" name="X">gamepad1.X</param>
+                    <param id="1" name="Y">gamepad1.Y</param>
+                </action>
+                <action id="-8" name="Set angle" sid="730178479628853" type="gamepad_middle">
+                    <param id="0" name="Angle">angle(gamepad_middle.X,gamepad_middle.Y,Touch.X, Touch.Y)</param>
+                </action>
+                <action id="-23" name="Move at angle" sid="512186505063440" type="gamepad_middle">
+                    <param id="0" name="Angle">Self.Angle</param>
+                    <param id="1" name="Distance">min(distance(Touch.X,Touch.Y,gamepad_middle.X, gamepad_middle.Y)/2,45)</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="570536541437234">
+                    <conditions>
+                        <condition id="-12" name="Is clockwise from" sid="731652080525439" type="gamepad_middle">
+                            <param id="0" name="Angle">90</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="167572831109543" type="heroTamnah">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="484499493368461" type="heroTamnah">
+                            <param id="0" name="Animation">&quot;jalan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="640372510722616">
+                    <conditions>
+                        <condition id="-12" name="Is clockwise from" sid="896743780763582" type="gamepad_middle">
+                            <param id="0" name="Angle">270</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="397464788716891" type="heroTamnah">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="616386857082528" type="heroTamnah">
+                            <param id="0" name="Animation">&quot;jalan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="452573959943024">
+                    <conditions>
+                        <condition id="-12" name="Is clockwise from" sid="247057612056607" type="gamepad_middle">
+                            <param id="0" name="Angle">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="689296432833692" type="heroTamnah">
+                            <param id="0" name="Control">3</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="213960657322073" type="heroTamnah">
+                            <param id="0" name="Animation">&quot;jalan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="103706249121815">
+                    <conditions>
+                        <condition id="-12" name="Is clockwise from" sid="227607277409174" type="gamepad_middle">
+                            <param id="0" name="Angle">180</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="8Direction" id="7" name="Simulate control" sid="893295438113528" type="heroTamnah">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="148235905636556" type="heroTamnah">
+                            <param id="0" name="Animation">&quot;jalan&quot;</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="242449881100357">
+            <conditions>
+                <condition id="17" name="On tap object" sid="952700428508764" type="Touch">
+                    <param id="0" name="Object">tombolgun</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="876564850965947" type="heroTamnah">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-10" name="Set value" sid="330745414035795" type="bullet">
+                    <param id="0" name="Instance variable">multiplayer_id</param>
+                    <param id="1" name="Value">Player.multiplayer_id</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>musuh destroy</comment>
+        <event-block sid="803106532674785">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="858482530339734" type="musuhtambah">
+                    <param id="0" name="Object">bullet</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="537800572819295" type="bullet" />
+                <action id="0" name="Spawn another object" sid="449666208326472" type="musuhtambah">
+                    <param id="0" name="Object">sangue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="680108781028482" type="System">
+                    <param id="0" name="Variable">life4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="865971355665183" type="musuhtambah">
+                    <param id="0" name="Instance variable">live4</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="363194363380187">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="526068885867768" type="musuhtambah">
+                    <param id="0" name="Instance variable">live4</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="912167022714739" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="490976255426745">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="788569234230122" type="bullet">
+                    <param id="0" name="Object">ka</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="396080621665503" type="bullet" />
+                <action id="4" name="Set animation" sid="693477455655688" type="ka">
+                    <param id="0" name="Animation">&quot;Lepas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="387268489946613" type="ka">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="864474462340431" type="System">
+                    <param id="0" name="Variable">life5</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="924720475184645">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="697820963351501" type="bullet">
+                    <param id="0" name="Object">Sprite37</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="584442331936104" type="bullet" />
+                <action id="4" name="Set animation" sid="176910021270428" type="Sprite37">
+                    <param id="0" name="Animation">&quot;Lepas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="893226270065636" type="Sprite37">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="521644712908237" type="System">
+                    <param id="0" name="Variable">life5</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="897247170672409">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="237611466661185" type="bullet">
+                    <param id="0" name="Object">Sprite38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="299348910227792" type="bullet" />
+                <action id="4" name="Set animation" sid="140347945891372" type="Sprite38">
+                    <param id="0" name="Animation">&quot;Lepas&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+                <action behavior="Sine" id="0" name="Set active" sid="470216150690312" type="Sprite38">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-11" name="Subtract from" sid="605004033751110" type="System">
+                    <param id="0" name="Variable">life5</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="341302151590910">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="743327161723416" type="System">
+                    <param id="0" name="Variable">life5</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="141634515917592" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <comment>nyawa indikator</comment>
+        <event-block sid="164472726297998">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="561707668267962" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="678702722213063" type="nyawa">
+                    <param id="0" name="Frame number">6</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="856008019305552">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="261147125767718" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="657087418009141" type="nyawa">
+                    <param id="0" name="Frame number">4</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="314678818510877">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="620917347369003" type="System">
+                    <param id="0" name="Variable">nyawaht</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="854367166951104" type="nyawa">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

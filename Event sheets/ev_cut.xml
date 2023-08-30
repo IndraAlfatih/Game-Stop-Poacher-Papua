@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_cut</name>
+    <events>
+        <event-block sid="227408199637896">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="573081457365657" type="System" />
+            </conditions>
+            <actions>
+                <action id="-22" name="Set angle toward position" sid="400081967197663" type="cutt2">
+                    <param id="0" name="X">563</param>
+                    <param id="1" name="Y">368</param>
+                </action>
+                <action behavior="Bullet" id="0" name="Set speed" sid="869828013887618" type="cutt2">
+                    <param id="0" name="Speed">10</param>
+                </action>
+                <action id="4" name="Set animation" sid="840635835875560" type="cutt2">
+                    <param id="0" name="Animation">&quot;default&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="731543604910692">
+            <conditions>
+                <condition id="2" name="Has ended" sid="671648905527981" type="YoutubePlayer" />
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="398817189568467" type="System">
+                    <param id="0" name="Layout">map</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="447927574997914">
+            <conditions>
+                <condition id="17" name="On tap object" sid="615662996071889" type="Touch">
+                    <param id="0" name="Object">Sprite42</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="895009694659754" type="System">
+                    <param id="0" name="Layout">map</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

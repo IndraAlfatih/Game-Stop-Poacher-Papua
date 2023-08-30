@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_map</name>
+    <events>
+        <event-block sid="272067502650735">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="695629008564244" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="603003796525049" type="Audio">
+                    <param id="0" name="Audio file">win</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;win&quot;</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="504593219486252" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="280768898968124" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="277740516167473" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="713321507809861">
+            <conditions>
+                <condition id="17" name="On tap object" sid="734946004157123" type="Touch">
+                    <param id="0" name="Object">level1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="756354521212606" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="347607001182303">
+            <conditions>
+                <condition id="17" name="On tap object" sid="524344863813526" type="Touch">
+                    <param id="0" name="Object">menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="659084909969105" type="System">
+                    <param id="0" name="Layout">game</param>
+                </action>
+                <action id="6" name="Stop" sid="126925027954642" type="Audio">
+                    <param id="0" name="Tag">&quot;win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="647755116304249">
+            <conditions>
+                <condition id="17" name="On tap object" sid="205773378069738" type="Touch">
+                    <param id="0" name="Object">level2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="434401493455641" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="978537429912579">
+            <conditions>
+                <condition id="17" name="On tap object" sid="500795204089745" type="Touch">
+                    <param id="0" name="Object">Sprite32</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="713712898808667" type="System">
+                    <param id="0" name="Layout">game2</param>
+                </action>
+                <action id="6" name="Stop" sid="122189566486932" type="Audio">
+                    <param id="0" name="Tag">&quot;win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="642703620079893">
+            <conditions>
+                <condition id="17" name="On tap object" sid="803324434289021" type="Touch">
+                    <param id="0" name="Object">level3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="812741189664825" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="652670374415400">
+            <conditions>
+                <condition id="17" name="On tap object" sid="495468838751606" type="Touch">
+                    <param id="0" name="Object">Sprite41</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="784894113450047" type="System">
+                    <param id="0" name="Layout">game3</param>
+                </action>
+                <action id="6" name="Stop" sid="536471541983575" type="Audio">
+                    <param id="0" name="Tag">&quot;win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

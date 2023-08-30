@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_Start</name>
+    <events>
+        <event-block sid="905069023791324">
+            <conditions>
+                <condition id="17" name="On tap object" sid="153632083105645" type="Touch">
+                    <param id="0" name="Object">Sprite21</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="700640613014993" type="System">
+                    <param id="0" name="Layout">cut</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="350214456932918">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="868506597613427" type="System">
+                    <param id="0" name="Interval (seconds)">2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="282939966685490" type="Sprite24">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="111474955435046">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="846958684944793" type="System">
+                    <param id="0" name="Interval (seconds)">3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="878345322101816" type="Sprite25">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="521687502355001">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="675267979795307" type="System">
+                    <param id="0" name="Interval (seconds)">4</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Spawn another object" sid="392812856745425" type="Sprite26">
+                    <param id="0" name="Object">bullet</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="557234458670211">
+            <conditions>
+                <condition id="17" name="On tap object" sid="943711575152833" type="Touch">
+                    <param id="0" name="Object">Sprite23</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="744638238042746" type="System">
+                    <param id="0" name="Layer">4</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="616675306912458">
+            <conditions>
+                <condition id="17" name="On tap object" sid="674945127545825" type="Touch">
+                    <param id="0" name="Object">Sprite39</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="33" name="Stop all" sid="813979861531631" type="Audio" />
+                <action id="4" name="Set animation" sid="164785061432195" type="Sprite39">
+                    <param id="0" name="Animation">&quot;pause&quot;</param>
+                    <param id="1" name="From">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="191262295733117">
+            <conditions>
+                <condition id="17" name="On tap object" sid="595557545508967" type="Touch">
+                    <param id="0" name="Object">menu</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="724124946725244" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="855993432023295" type="Sprite21">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="144030021948549" type="Sprite22">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="167781392295944" type="Sprite23">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="654178776717787" type="Sprite24">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="112504823394180" type="Sprite13">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="532854282950619" type="Sprite25">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="175570888910723" type="Sprite26">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="143398927679497" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-3" name="Set position" sid="787624771345333" type="NAMA">
+                    <param id="0" name="X">698.83</param>
+                    <param id="1" name="Y">92.206</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="953740975079726">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="130592612428097" type="Sprite21">
+                    <param id="0" name="Object">stopper3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="296266328588875" type="Sprite21">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="297899579461160">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="193712935165221" type="Sprite22">
+                    <param id="0" name="Object">stopper3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="838933509426500" type="Sprite22">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="353071672282236">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="293026430848845" type="Sprite23">
+                    <param id="0" name="Object">stopper2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="249119376236620" type="Sprite23">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="246275730307414">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="859588910935019" type="Sprite13">
+                    <param id="0" name="Object">stopper2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="237662353592405" type="Sprite13">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="676317113168740">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="923309393384037" type="Sprite26">
+                    <param id="0" name="Object">stopper2</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="486652521599381" type="Sprite26">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="192325533006883">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="839928162176923" type="Sprite24">
+                    <param id="0" name="Object">stopper3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="439610787527720" type="Sprite24">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="605607163340001">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="427802463048062" type="Sprite25">
+                    <param id="0" name="Object">stopper3</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="400465614515947" type="Sprite25">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="931094325122082">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="711934912160756" type="bullet">
+                    <param id="0" name="Object">Sprite26</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="641560127149555" type="bullet" />
+                <action id="0" name="Spawn another object" sid="877446483526608" type="Sprite26">
+                    <param id="0" name="Object">sangue</param>
+                    <param id="1" name="Layer">1</param>
+                    <param id="2" name="Image point">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="393369077183306">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="166864508561355" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="989875514470590" type="Audio">
+                    <param id="0" name="Audio file">win</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">100</param>
+                    <param id="1" name="Tag (optional)">&quot;win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="351295341189869">
+            <conditions>
+                <condition id="-3" name="On end of layout" sid="854825272938993" type="System" />
+            </conditions>
+            <actions>
+                <action id="6" name="Stop" sid="647766001959640" type="Audio">
+                    <param id="0" name="Tag">&quot;win&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

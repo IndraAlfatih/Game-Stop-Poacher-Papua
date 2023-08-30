@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_game1</name>
+    <events>
+        <include>ev_umum</include>
+        <event-block sid="989234565995877">
+            <conditions>
+                <condition id="17" name="On tap object" sid="303381829529826" type="Touch">
+                    <param id="0" name="Object">lanjut</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="385262815619422" type="System">
+                    <param id="0" name="Layout">tambah</param>
+                </action>
+                <action id="-26" name="Restart layout" sid="291391977521295" type="System" />
+                <action id="-4" name="Set layer visible" sid="896307336963272" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

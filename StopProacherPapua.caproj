@@ -1,0 +1,3006 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>StopProacherPapua</name>
+    <description>StopProacherPapua</description>
+    <version>2.0</version>
+    <author>imacha</author>
+    <author-email>indrateknik19@gmail.com</author-email>
+    <author-website></author-website>
+    <app-id>com.imacha</app-id>
+    <unique-id>2e9nrozlnk5jy</unique-id>
+    <saved-with-version>25900</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Multiplayer" version="1">Multiplayer</plugin>
+        <plugin author="Scirra" id="Particles" version="1">Particles</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Spritefont2" version="1">Sprite font</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Rex.Rainbow" id="rex_youtube_player" version="0.100000001">Youtube player</plugin>
+        <plugin author="Scirra" id="video" version="1">Video</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Anchor" version="1">Anchor</behavior>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="DragnDrop" version="1">Drag &amp; Drop</behavior>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="Flash" version="1">Flash</behavior>
+        <behavior author="Scirra" id="LOS" version="1">Line Of Sight</behavior>
+        <behavior author="Scirra" id="Pathfinding" version="1">Pathfinding</behavior>
+        <behavior author="Scirra" id="Pin" version="1">Pin</behavior>
+        <behavior author="Scirra" id="Sin" version="1">Sine</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="destroy" version="1">Destroy outside layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>854</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <first-layout>Start</first-layout>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar only</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">Opera</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Background" sid="463394485372840">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\7. INSYAALLAH\1. GAME\picture\tile_04.png" />
+        </object-type>
+        <object-type name="obj1" sid="465468598747123">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="235624052471105">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="529343874623138" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506329" original-source="F:\7. INSYAALLAH\imacha\picture\pohon2.png">
+                        <collision-poly>
+                            <point x="0.147846" y="0.128903" />
+                            <point x="0.5" y="0.024996" />
+                            <point x="0.838069" y="0.143747" />
+                            <point x="0.950758" y="0.5" />
+                            <point x="0.852154" y="0.871097" />
+                            <point x="0.5" y="0.975004" />
+                            <point x="0.147846" y="0.871097" />
+                            <point x="0.0492425" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5375" hotspotY="0.65625" original-source="C:\Users\Indra Yulianto\Documents\vid\batu3.png">
+                        <collision-poly>
+                            <point x="0.0375" y="0.470238" />
+                            <point x="0.531915" y="0" />
+                            <point x="0.925" y="0.313988" />
+                            <point x="1" y="0.653274" />
+                            <point x="1" y="0.99256" />
+                            <point x="0.631915" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.653274" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.541667" hotspotY="0.460526" original-source="F:\7. INSYAALLAH\imacha\picture\pohon3.png">
+                        <collision-poly>
+                            <point x="0.312475" y="0.0285717" />
+                            <point x="0.560216" y="0.0263158" />
+                            <point x="0.979167" y="0.131579" />
+                            <point x="0.979167" y="0.714083" />
+                            <point x="0.779461" y="0.908784" />
+                            <point x="0.538436" y="0.965572" />
+                            <point x="0.297411" y="0.908784" />
+                            <point x="0.0563864" y="0.480441" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.531915" hotspotY="0.634921" original-source="C:\Users\Indra Yulianto\Documents\vid\batu.png">
+                        <collision-poly>
+                            <point x="0.0675532" y="0.0863095" />
+                            <point x="0.493617" y="0" />
+                            <point x="0.934043" y="0" />
+                            <point x="1" y="0.646825" />
+                            <point x="0.874468" y="0.969246" />
+                            <point x="0.582979" y="0.968254" />
+                            <point x="0.12766" y="0.888889" />
+                            <point x="0" y="0.615079" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="MessagemGame" sid="414099822978575">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Player" sid="874196464905718">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="multiplayer_id" sid="842420400641366" type="string" />
+                <instance-variable name="inputs" sid="664466335345760" type="number" />
+                <instance-variable name="arma1" sid="514894680303843" type="number" />
+                <instance-variable name="animacao" sid="744631583247708" type="string" />
+                <instance-variable name="life" sid="466572573830299" type="number" />
+                <instance-variable name="nyawabaru" sid="159036727364802" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="8Direction" sid="804246396371401">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="598933582269023">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Flash" sid="715872974004307">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>jmobile3</type>
+                <type>Player</type>
+            </container>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="stand" pingpong="0" repeatcount="1" repeatto="0" sid="358723307806475" speed="0">
+                    <frame duration="1" hotspotX="0.508772" hotspotY="0.511111" original-source="F:\7. INSYAALLAH\imacha\picture\1.png">
+                        <collision-poly>
+                            <point x="0.192982" y="0.155556" />
+                            <point x="0.48538" y="0.0222222" />
+                            <point x="0.771931" y="0.022222" />
+                            <point x="0.865497" y="0.488889" />
+                            <point x="0.824562" y="0.933334" />
+                            <point x="0.48538" y="0.977778" />
+                            <point x="0.192982" y="0.844444" />
+                            <point x="0.0760234" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.529412" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\2.1.png">
+                        <collision-poly>
+                            <point x="0.222222" y="0.186047" />
+                            <point x="0.5" y="0" />
+                            <point x="0.75" y="0" />
+                            <point x="0.888889" y="0.488372" />
+                            <point x="0.867647" y="1" />
+                            <point x="0.5" y="1" />
+                            <point x="0.222222" y="0.813953" />
+                            <point x="0.0277778" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="arma1" pingpong="0" repeatcount="1" repeatto="0" sid="883748797594573" speed="0">
+                    <frame duration="1" hotspotX="0.507042" hotspotY="0.511628" original-source="F:\7. INSYAALLAH\imacha\picture\3.png">
+                        <image-point name="fire" x="1.16901" y="0.697674" />
+                        <collision-poly>
+                            <point x="0.15493" y="0.255814" />
+                            <point x="0.492958" y="0" />
+                            <point x="0.887324" y="0.186047" />
+                            <point x="0.788732" y="0.488372" />
+                            <point x="0.774648" y="0.627907" />
+                            <point x="0.492958" y="1" />
+                            <point x="0.126761" y="0.790698" />
+                            <point x="0.0422535" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.511628" original-source="F:\7. INSYAALLAH\imacha\picture\2.2.png">
+                        <image-point name="fire" x="1.15714" y="0.697674" />
+                        <collision-poly>
+                            <point x="0.210989" y="0" />
+                            <point x="0.628571" y="0" />
+                            <point x="1" y="0.232558" />
+                            <point x="0.743957" y="0.534884" />
+                            <point x="0.708242" y="0.906976" />
+                            <point x="0.5" y="1" />
+                            <point x="0.153846" y="0.813953" />
+                            <point x="0.0192308" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="depan" pingpong="0" repeatcount="1" repeatto="0" sid="537005791791532" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503937" original-source="F:\7. INSYAALLAH\game\fix\hero1\depan 1.png">
+                        <collision-poly>
+                            <point x="0" y="0.141732" />
+                            <point x="0.5" y="0.0393701" />
+                            <point x="1" y="0.188976" />
+                            <point x="0.930556" y="0.496063" />
+                            <point x="0.708333" y="0.984252" />
+                            <point x="0.5" y="0.889764" />
+                            <point x="0.111111" y="0.937008" />
+                            <point x="0.0694444" y="0.496063" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504065" original-source="F:\7. INSYAALLAH\game\fix\hero1\depan 2.png">
+                        <collision-poly>
+                            <point x="0" y="0.170732" />
+                            <point x="0.5" y="0.0406504" />
+                            <point x="1" y="0.178862" />
+                            <point x="0.930556" y="0.495935" />
+                            <point x="0.791667" y="0.878049" />
+                            <point x="0.5" y="0.918699" />
+                            <point x="0.236111" y="1" />
+                            <point x="0.0694444" y="0.495935" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="kiri" pingpong="0" repeatcount="1" repeatto="0" sid="332531221903239" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kiri 1.png">
+                        <collision-poly>
+                            <point x="0.3125" y="0.211864" />
+                            <point x="0.5" y="0.0423729" />
+                            <point x="1" y="0.144068" />
+                            <point x="0.8125" y="0.5" />
+                            <point x="0.5375" y="0.686441" />
+                            <point x="0.5" y="0.966102" />
+                            <point x="0.025" y="0.983051" />
+                            <point x="0.125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kiri2.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="1" y="0.120968" />
+                            <point x="0.777778" y="0.5" />
+                            <point x="0.472222" y="0.693548" />
+                            <point x="0.5" y="0.66129" />
+                            <point x="0.0277778" y="0.983871" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="2" loop="0" name="kanan" pingpong="0" repeatcount="1" repeatto="0" sid="723665956433269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kanan 1.png">
+                        <collision-poly>
+                            <point x="0" y="0.144068" />
+                            <point x="0.5" y="0.00847458" />
+                            <point x="0.722222" y="0.169492" />
+                            <point x="0.972222" y="0.5" />
+                            <point x="0.986111" y="0.991525" />
+                            <point x="0.5" y="0.932203" />
+                            <point x="0.513889" y="0.686441" />
+                            <point x="0.208333" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kanan 2.png">
+                        <collision-poly>
+                            <point x="0" y="0.109375" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.722222" y="0.15625" />
+                            <point x="0.986111" y="0.5" />
+                            <point x="0.791667" y="0.882813" />
+                            <point x="0.5" y="0.851563" />
+                            <point x="0.513889" y="0.710938" />
+                            <point x="0.236111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Multiplayer" sid="533327584752638">
+            <plugin id="Multiplayer" />
+        </object-type>
+        <object-type name="Keyboard" sid="543130967982402">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="txt_player_game" sid="722176009384874">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="texto_generico" sid="888436376296096">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btn_play" sid="581281091377342">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="724413956726838" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\Sem título-1.fw.png">
+                        <collision-poly>
+                            <point x="0.0375" y="0.0652174" />
+                            <point x="0.5" y="0.0434783" />
+                            <point x="0.9625" y="0.0652174" />
+                            <point x="0.9125" y="0.847826" />
+                            <point x="0.5" y="0.978261" />
+                            <point x="0.0375" y="0.934783" />
+                            <point x="0.0125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="546110785134619">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="jmobile2" sid="295177210568409">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="tmobil2" sid="460767010536630" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="742582266540425">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="cam" sid="919687388960329">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ScrollTo" sid="244469619179397">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="Pin" sid="426754364264601">
+                    <behavior id="Pin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="403747801230258" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="obj2" sid="377143059190535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="4" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="112399414099052" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\pohon.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\Tiles\tile_161.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\Tiles\tile_210.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\Tiles\tile_213.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="arma1" sid="421206398350368">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="359517303328336" speed="5">
+                    <frame duration="1" hotspotX="0.518519" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\senjata1.png">
+                        <collision-poly>
+                            <point x="0.08577" y="0.166667" />
+                            <point x="0.475633" y="0.0833333" />
+                            <point x="0.91423" y="0.166667" />
+                            <point x="0.962963" y="0.5" />
+                            <point x="0.91423" y="0.833333" />
+                            <point x="0.475633" y="0.916667" />
+                            <point x="0.08577" y="0.833333" />
+                            <point x="0.037037" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bullet" sid="390208587463520">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="multiplayer_id" sid="180291309641653" type="string" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="355684133618154">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="DestroyOutsideLayout" sid="346179603077517">
+                    <behavior id="destroy" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="421902687833737" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.473684" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\towerDefense_tile295.png">
+                        <collision-poly>
+                            <point x="1" y="0.526316" />
+                            <point x="0.1" y="0.947368" />
+                            <point x="0" y="0.0526316" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\maciel\Maciel - Games PROJETOS\C2 Games - Projetos Reais\c2 multiplayer - topdown shooter\assets\towerDefense_tile272.png">
+                        <collision-poly>
+                            <point x="0.0555556" y="0" />
+                            <point x="1" y="0.111111" />
+                            <point x="0.944444" y="0.833333" />
+                            <point x="0" y="0.833333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="sangue" sid="467830836856297">
+            <plugin id="Particles" />
+            <texture />
+        </object-type>
+        <object-type name="Sprite" sid="689979379370251">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="837984778850150">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="332997275498486" speed="5">
+                    <frame duration="1" hotspotX="0.494681" hotspotY="0.516717" original-source="F:\7. INSYAALLAH\imacha\picture\rumah.png">
+                        <collision-poly>
+                            <point x="0.162234" y="0.136778" />
+                            <point x="0.494681" y="0.00303951" />
+                            <point x="0.816489" y="0.148936" />
+                            <point x="0.930851" y="0.516717" />
+                            <point x="0.869681" y="0.945289" />
+                            <point x="0.494681" y="0.993921" />
+                            <point x="0.12234" y="0.942249" />
+                            <point x="0.0664894" y="0.516717" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite2" sid="985866197581090">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="live1" sid="147543666440441" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="697609385548130">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="322973055256530">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="859432741132720" speed="2">
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.509434" original-source="C:\Users\Indra Yulianto\Documents\game\mobil2.png">
+                        <collision-poly>
+                            <point x="0.0217365" y="0.0370238" />
+                            <point x="0.309232" y="0.0370238" />
+                            <point x="0.650366" y="0.194901" />
+                            <point x="0.978263" y="0.518156" />
+                            <point x="0.978263" y="0.933769" />
+                            <point x="0.0748769" y="0.932782" />
+                            <point x="0.0217365" y="0.795034" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.509434" original-source="C:\Users\Indra Yulianto\Documents\game\mobil3.png">
+                        <collision-poly>
+                            <point x="0.0659341" y="0.113208" />
+                            <point x="0.494505" y="0.226415" />
+                            <point x="0.736264" y="0.45283" />
+                            <point x="0.879121" y="0.490566" />
+                            <point x="0.923077" y="0.867925" />
+                            <point x="0.494505" y="0.849057" />
+                            <point x="0.0769231" y="0.867925" />
+                            <point x="0.010989" y="0.490566" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="685640768835136">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="live2" sid="465866894629642" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="195825358528856">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="274627169712353">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="150911842063247" speed="2">
+                    <frame duration="1" hotspotX="0.505495" hotspotY="0.509434" original-source="C:\Users\Indra Yulianto\Documents\game\mobil4.png">
+                        <collision-poly>
+                            <point x="0.0217365" y="0.0370238" />
+                            <point x="0.5" y="0.0668862" />
+                            <point x="0.625966" y="0.213827" />
+                            <point x="0.978263" y="0.495461" />
+                            <point x="0.978263" y="0.962976" />
+                            <point x="0.0888153" y="0.92327" />
+                            <point x="0.0297972" y="0.658864" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.505618" hotspotY="0.509804" original-source="C:\Users\Indra Yulianto\Documents\game\mobil5.png">
+                        <collision-poly>
+                            <point x="0.0561798" y="0.0980392" />
+                            <point x="0.494382" y="0.215686" />
+                            <point x="0.741573" y="0.45098" />
+                            <point x="0.88764" y="0.490196" />
+                            <point x="0.932584" y="0.882353" />
+                            <point x="0.494382" y="0.862745" />
+                            <point x="0.0674157" y="0.882353" />
+                            <point x="0" y="0.490196" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite4" sid="989428790346092">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="live3" sid="951976564739843" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="987930202086699">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="557499224787086">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="343697631904966" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.506173" original-source="C:\Users\Indra Yulianto\Documents\vid\gerobak.png">
+                        <collision-poly>
+                            <point x="0.0121951" y="0.0885665" />
+                            <point x="0.5" y="0.033548" />
+                            <point x="0.987805" y="0.0123457" />
+                            <point x="0.97619" y="0.5" />
+                            <point x="0.952962" y="0.95585" />
+                            <point x="0.0586527" y="0.94525" />
+                            <point x="0.0354239" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="193133648792892">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="526215514502797" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="847445719331949">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="834287812340327" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy" sid="433538466393841">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="destroy" sid="661915538223006" type="number" />
+                <instance-variable name="liven" sid="269336087628596" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="487639392826757">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="206352625720434">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656845063804906" speed="5">
+                    <frame duration="1" hotspotX="0.515625" hotspotY="0.511628" original-source="C:\Users\Indra Yulianto\Documents\vid\musuh.png">
+                        <collision-poly>
+                            <point x="0.0222222" y="0.101165" />
+                            <point x="0.487087" y="0.0530466" />
+                            <point x="0.937538" y="0.0322581" />
+                            <point x="0.796997" y="0.489606" />
+                            <point x="0.963889" y="0.967742" />
+                            <point x="0.487087" y="0.946954" />
+                            <point x="0.0222222" y="0.935484" />
+                            <point x="0.0222222" y="0.55009" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="468532245030168">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="264680474119294" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemy2" sid="879857128796222">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="LineOfSight" sid="689598746706351">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="239508566034775">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="272969654740139">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="509129920905034" speed="5">
+                    <frame duration="1" hotspotX="0.514706" hotspotY="0.511111" original-source="C:\Users\Indra Yulianto\Documents\vid\enemy.png">
+                        <collision-poly>
+                            <point x="0.133553" y="0.155556" />
+                            <point x="0.493773" y="0.0166667" />
+                            <point x="0.970588" y="0.311111" />
+                            <point x="0.589136" y="0.488889" />
+                            <point x="0.826831" y="0.799999" />
+                            <point x="0.41289" y="1" />
+                            <point x="0.133553" y="0.844444" />
+                            <point x="0" y="0.488889" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="519766162021329">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="155013920165636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.511628" original-source="C:\Users\Indra Yulianto\Documents\vid\enemy.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.255814" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.232558" />
+                            <point x="0.575758" y="0.488372" />
+                            <point x="0.545455" y="0.302326" />
+                            <point x="0.5" y="0.976744" />
+                            <point x="0.151515" y="0.767442" />
+                            <point x="0" y="0.488372" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite9" sid="729866456406339">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="836966357495484" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="nyawa" sid="651268616200547">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="177793840351326">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="146655771600745" speed="5">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 1.png">
+                        <collision-poly>
+                            <point x="0.0673948" y="0.310417" />
+                            <point x="0.5" y="0.184028" />
+                            <point x="0.932605" y="0.310417" />
+                            <point x="0.971933" y="0.5" />
+                            <point x="0.932605" y="0.689583" />
+                            <point x="0.5" y="0.815972" />
+                            <point x="0.0673948" y="0.689583" />
+                            <point x="0.0280671" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 2.png">
+                        <collision-poly>
+                            <point x="0.0844886" y="0.310417" />
+                            <point x="0.5" y="0.184028" />
+                            <point x="0.915511" y="0.310417" />
+                            <point x="0.953285" y="0.5" />
+                            <point x="0.915511" y="0.689583" />
+                            <point x="0.5" y="0.815972" />
+                            <point x="0.0844886" y="0.689583" />
+                            <point x="0.0467149" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.506329" hotspotY="0.533333" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 3.png">
+                        <collision-poly>
+                            <point x="0.0744856" y="0.312222" />
+                            <point x="0.5" y="0.187037" />
+                            <point x="0.925514" y="0.312222" />
+                            <point x="0.964197" y="0.5" />
+                            <point x="0.925514" y="0.687778" />
+                            <point x="0.5" y="0.812963" />
+                            <point x="0.0744856" y="0.687778" />
+                            <point x="0.0358025" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 4.png">
+                        <collision-poly>
+                            <point x="0.0709845" y="0.310417" />
+                            <point x="0.5" y="0.184028" />
+                            <point x="0.929015" y="0.310417" />
+                            <point x="0.968017" y="0.5" />
+                            <point x="0.929015" y="0.689583" />
+                            <point x="0.5" y="0.815972" />
+                            <point x="0.0709845" y="0.689583" />
+                            <point x="0.0319831" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 5.png">
+                        <collision-poly>
+                            <point x="0.0690993" y="0.310417" />
+                            <point x="0.5" y="0.184028" />
+                            <point x="0.930901" y="0.310417" />
+                            <point x="0.970073" y="0.5" />
+                            <point x="0.930901" y="0.689583" />
+                            <point x="0.5" y="0.815972" />
+                            <point x="0.0690993" y="0.689583" />
+                            <point x="0.0299265" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 6.png">
+                        <collision-poly>
+                            <point x="0.0673948" y="0.310417" />
+                            <point x="0.5" y="0.184028" />
+                            <point x="0.932605" y="0.310417" />
+                            <point x="0.971933" y="0.5" />
+                            <point x="0.932605" y="0.689583" />
+                            <point x="0.5" y="0.815972" />
+                            <point x="0.0673948" y="0.689583" />
+                            <point x="0.0280671" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 7.png">
+                        <collision-poly>
+                            <point x="0.00843882" y="0.125" />
+                            <point x="0.991561" y="0.125" />
+                            <point x="0.991561" y="0.875" />
+                            <point x="0.00843882" y="0.875" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite10" sid="209040980180170">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176496721819235" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501916" original-source="F:\7. INSYAALLAH\imacha\picture\login.png">
+                        <collision-poly>
+                            <point x="0.15923" y="0.193197" />
+                            <point x="0.5" y="0.0854421" />
+                            <point x="0.84077" y="0.193197" />
+                            <point x="0.987526" y="0.498504" />
+                            <point x="0.810922" y="0.770884" />
+                            <point x="0.5" y="0.989388" />
+                            <point x="0.181616" y="0.779864" />
+                            <point x="0.0199368" y="0.498504" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite11" sid="994319037031674">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="911988915250599" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="hero2" sid="966661477085949">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="948296305805798">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="LineOfSight" sid="762869618762079">
+                    <behavior id="LOS" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="730870123213015">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="177334790843326">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Pathfinding" sid="808967885470486">
+                    <behavior id="Pathfinding" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="649767863967461" speed="5">
+                    <frame duration="1" hotspotX="0.513889" hotspotY="0.511111" original-source="F:\7. INSYAALLAH\imacha\picture\her.png">
+                        <collision-poly>
+                            <point x="0.157128" y="0.185493" />
+                            <point x="0.490733" y="0.307237" />
+                            <point x="0.583401" y="0.469564" />
+                            <point x="0.583401" y="0.489855" />
+                            <point x="0.824339" y="0.794217" />
+                            <point x="0.490733" y="0.915962" />
+                            <point x="0.157128" y="0.814507" />
+                            <point x="0.0829929" y="0.489855" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ball" sid="816755257798667">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="771392394613183">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="957415358391908" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\push.png">
+                        <collision-poly>
+                            <point x="0.181818" y="0.181818" />
+                            <point x="0.5" y="0.0454545" />
+                            <point x="0.818182" y="0.181818" />
+                            <point x="0.954545" y="0.5" />
+                            <point x="0.818182" y="0.818182" />
+                            <point x="0.5" y="0.909091" />
+                            <point x="0.227273" y="0.772727" />
+                            <point x="0.0909091" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite12" sid="588536854263326">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="925027791271699" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\icon\topdown-shooter\PNG\Tiles\tile_07.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite17" sid="514181725146351">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="174980043058169" speed="1">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\icon\topdown-shooter\PNG\Tiles\tile_07.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="841791355515823">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="TiledBackground" sid="267717931306005">
+            <plugin id="TiledBg" />
+            <texture original-source="F:\7. INSYAALLAH\icon\topdown-shooter\PNG\Tiles\tile_09.png" />
+        </object-type>
+        <object-type name="cut" sid="631383241328648">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="247543869523647" speed="5">
+                    <frame duration="1" hotspotX="0.500585" hotspotY="0.50104" original-source="C:\Users\Indra Yulianto\Documents\vid\b1.png">
+                        <collision-poly>
+                            <point x="0.00467836" y="0.00831601" />
+                            <point x="0.99883" y="0.002079" />
+                            <point x="0.997661" y="0.995842" />
+                            <point x="0.00350877" y="0.993763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cutsin" sid="170587367167638">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="186858666026140" speed="5">
+                    <frame duration="1" hotspotX="0.500278" hotspotY="0.497343" original-source="C:\Users\Indra Yulianto\Documents\vid\bg1.png">
+                        <collision-poly>
+                            <point x="0.00332963" y="0.00207469" />
+                            <point x="0.99667" y="0.00207469" />
+                            <point x="0.999445" y="0.998963" />
+                            <point x="0.00166482" y="0.996888" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503106" original-source="F:\7. INSYAALLAH\imacha\picture\cut2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan" sid="961448440794305">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="788366705670987">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342526945027833" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.506173" original-source="C:\Users\Indra Yulianto\Documents\vid\awan1.png">
+                        <collision-poly>
+                            <point x="0.111111" y="0.283951" />
+                            <point x="0.497585" y="0.0740741" />
+                            <point x="0.903382" y="0.246914" />
+                            <point x="0.995169" y="0.493827" />
+                            <point x="0.89372" y="0.728395" />
+                            <point x="0.497585" y="0.888889" />
+                            <point x="0.0917874" y="0.765432" />
+                            <point x="0.0144928" y="0.493827" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan2" sid="638018296665142">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="639650496172773">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="321668677458478" speed="5">
+                    <frame duration="1" hotspotX="0.502024" hotspotY="0.507937" original-source="C:\Users\Indra Yulianto\Documents\vid\awan2.png">
+                        <collision-poly>
+                            <point x="0.133603" y="0.52381" />
+                            <point x="0.497976" y="0.365079" />
+                            <point x="0.906883" y="0.365079" />
+                            <point x="0.995951" y="0.492063" />
+                            <point x="0.927126" y="0.714286" />
+                            <point x="0.497976" y="0.888889" />
+                            <point x="0.0607287" y="0.761905" />
+                            <point x="0.157895" y="0.492063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan3" sid="878878421475034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="821340318466863">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="676552512152583" speed="5">
+                    <frame duration="1" hotspotX="0.502024" hotspotY="0.507937" original-source="C:\Users\Indra Yulianto\Documents\vid\awan2.png">
+                        <collision-poly>
+                            <point x="0.133603" y="0.52381" />
+                            <point x="0.497976" y="0.365079" />
+                            <point x="0.906883" y="0.365079" />
+                            <point x="0.995951" y="0.492063" />
+                            <point x="0.927126" y="0.714286" />
+                            <point x="0.497976" y="0.888889" />
+                            <point x="0.0607287" y="0.761905" />
+                            <point x="0.157895" y="0.492063" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="awan4" sid="507977157942905">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="684707683157201">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455268909940449" speed="5">
+                    <frame duration="1" hotspotX="0.502415" hotspotY="0.506173" original-source="C:\Users\Indra Yulianto\Documents\vid\awan1.png">
+                        <collision-poly>
+                            <point x="0.111111" y="0.283951" />
+                            <point x="0.497585" y="0.0740741" />
+                            <point x="0.903382" y="0.246914" />
+                            <point x="0.995169" y="0.493827" />
+                            <point x="0.89372" y="0.728395" />
+                            <point x="0.497585" y="0.888889" />
+                            <point x="0.0917874" y="0.765432" />
+                            <point x="0.0144928" y="0.493827" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cutt1" sid="265175035985294">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="310546393602438" speed="5">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.5" original-source="C:\Users\Indra Yulianto\Documents\vid\hero2.png">
+                        <collision-poly>
+                            <point x="0.109705" y="0.0962963" />
+                            <point x="0.831224" y="0.148148" />
+                            <point x="0.966245" y="0.5" />
+                            <point x="0.801688" y="0.825926" />
+                            <point x="0.49789" y="0.781482" />
+                            <point x="0.248945" y="0.781482" />
+                            <point x="0.0548523" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="cutt2" sid="900291628645133">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="533074585945044">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="783634649579405" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kanan 1.png">
+                        <collision-poly>
+                            <point x="0.306569" y="0.0602409" />
+                            <point x="0.49635" y="0.0120482" />
+                            <point x="1" y="0.293173" />
+                            <point x="1" y="0.998605" />
+                            <point x="0.766423" y="1" />
+                            <point x="0.474453" y="1" />
+                            <point x="0.321168" y="0.710843" />
+                            <point x="0" y="0.148594" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\game\fix\hero1\kanan 2.png">
+                        <collision-poly>
+                            <point x="0" y="0.109375" />
+                            <point x="0.5" y="0.0078125" />
+                            <point x="0.722222" y="0.15625" />
+                            <point x="0.986111" y="0.5" />
+                            <point x="0.930556" y="1" />
+                            <point x="0.5" y="0.851563" />
+                            <point x="0.513889" y="0.710938" />
+                            <point x="0.236111" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite18" sid="296930174505408">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="869215837849636" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Indra Yulianto\Documents\vid\bak1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TiledBackground2" sid="319731936332586">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\Indra Yulianto\Documents\vid\b5.png" />
+        </object-type>
+        <object-type name="Sprite19" sid="900050046648535">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="941308604211386" speed="5">
+                    <frame duration="1" hotspotX="0.500585" hotspotY="0.50104" original-source="C:\Users\Indra Yulianto\Documents\vid\b5.png">
+                        <collision-poly>
+                            <point x="0.00233918" y="0.004158" />
+                            <point x="0.99883" y="0.002079" />
+                            <point x="0.997661" y="0.995842" />
+                            <point x="0.00350877" y="0.993763" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Audio" sid="116621785907796">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="sun" sid="666251238680108">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="966792480243544" speed="5">
+                    <frame duration="1" hotspotX="0.504425" hotspotY="0.504425" original-source="C:\Users\Indra Yulianto\Documents\vid\sun.png">
+                        <collision-poly>
+                            <point x="0.159292" y="0.159292" />
+                            <point x="0.495575" y="0.0176991" />
+                            <point x="0.840708" y="0.159292" />
+                            <point x="0.982301" y="0.495575" />
+                            <point x="0.840708" y="0.840708" />
+                            <point x="0.495575" y="0.982301" />
+                            <point x="0.159292" y="0.840708" />
+                            <point x="0.0176991" y="0.495575" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite20" sid="570155840332507">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="800060106982008">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456951076526507" speed="5">
+                    <frame duration="1" hotspotX="0.502959" hotspotY="0.502618" original-source="C:\Users\Indra Yulianto\Documents\vid\menu4.png">
+                        <collision-poly>
+                            <point x="0.0532544" y="0.0471204" />
+                            <point x="0.497041" y="0.0052356" />
+                            <point x="0.946746" y="0.0471204" />
+                            <point x="0.857988" y="0.497382" />
+                            <point x="0.857988" y="0.874346" />
+                            <point x="0.497041" y="0.994764" />
+                            <point x="0.136095" y="0.879581" />
+                            <point x="0.136095" y="0.497382" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite21" sid="520445980286377">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="109110193006234">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="mulai" pingpong="0" repeatcount="1" repeatto="0" sid="571209319367784" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Indra Yulianto\Documents\vid\menu5.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0769231" />
+                            <point x="0.5" y="0.0384615" />
+                            <point x="0.986111" y="0.0769231" />
+                            <point x="0.986111" y="0.923077" />
+                            <point x="0.0138889" y="0.923077" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite22" sid="834266068896640">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="242949751061034">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455437622682791" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="C:\Users\Indra Yulianto\Documents\vid\menu7.png">
+                        <collision-poly>
+                            <point x="0.0138889" y="0.0740741" />
+                            <point x="0.5" y="0.0740741" />
+                            <point x="0.979167" y="0.111111" />
+                            <point x="1" y="0.481481" />
+                            <point x="0.986111" y="0.925926" />
+                            <point x="0.0138889" y="0.925926" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite23" sid="690955018419624">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="930065737542848">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="pengaturan" pingpong="0" repeatcount="1" repeatto="0" sid="412956561921510" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.548387" original-source="E:\7. INSYAALLAH\1. GAME\picture\pengaturan.png">
+                        <collision-poly>
+                            <point x="0.95308" y="0.848538" />
+                            <point x="0.5" y="0.877443" />
+                            <point x="0.0402563" y="0.877443" />
+                            <point x="0.0269303" y="0.530582" />
+                            <point x="0.0402563" y="0.18372" />
+                            <point x="0.5" y="0.212625" />
+                            <point x="0.95308" y="0.212625" />
+                            <point x="0.979733" y="0.530582" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite24" sid="608941018031542">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="432887010660968">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="880538104545570">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="277694950928008" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Indra Yulianto\Documents\vid\menu2.png">
+                        <collision-poly>
+                            <point x="0.00793653" y="0.123529" />
+                            <point x="0.5" y="0.0823529" />
+                            <point x="0.642857" y="0.258824" />
+                            <point x="0.992063" y="0.8" />
+                            <point x="0.722222" y="0.97647" />
+                            <point x="0.5" y="0.988235" />
+                            <point x="0.420635" y="0.688235" />
+                            <point x="0.18254" y="0.494118" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite25" sid="380811463414648">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="372345964787731">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="718197319890101">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="893449800086457" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502959" original-source="C:\Users\Indra Yulianto\Documents\vid\menu3.png">
+                        <collision-poly>
+                            <point x="0" y="0.171598" />
+                            <point x="0.5" y="0.0769231" />
+                            <point x="0.814516" y="0.497041" />
+                            <point x="1" y="0.822485" />
+                            <point x="0.5" y="0.994083" />
+                            <point x="0.427419" y="0.686391" />
+                            <point x="0.177419" y="0.497041" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite26" sid="304922931092422">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="718256703339367">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Bullet" sid="830232173846071">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980405527073192" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.496504" original-source="C:\Users\Indra Yulianto\Documents\vid\menu1.png">
+                        <collision-poly>
+                            <point x="0.761905" y="0.79021" />
+                            <point x="0.5" y="0.972028" />
+                            <point x="0.253968" y="0.776224" />
+                            <point x="0.095238" y="0.503496" />
+                            <point x="0.365079" y="0.321678" />
+                            <point x="0.5" y="0.027972" />
+                            <point x="0.793651" y="0.181818" />
+                            <point x="0.976191" y="0.503496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite13" sid="490925715887332">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="312139624707314">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="373821553429964" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Indra Yulianto\Documents\vid\menu8.png">
+                        <collision-poly>
+                            <point x="0.765432" y="0.793478" />
+                            <point x="0.5" y="0.967391" />
+                            <point x="0.259259" y="0.771739" />
+                            <point x="0.092593" y="0.5" />
+                            <point x="0.111111" y="0.097826" />
+                            <point x="0.5" y="0.027174" />
+                            <point x="0.709877" y="0.255435" />
+                            <point x="0.981481" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stopper1" sid="908107726995143">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="815591320052656" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stopper2" sid="265654871330614">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="684799931218410" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="stopper3" sid="641298269377569">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="917471288751750" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu" sid="305534123785007">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Flash" sid="733008399916951">
+                    <behavior id="Flash" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="244633077759353" speed="4">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.508772" original-source="F:\7. INSYAALLAH\imacha\picture\play1.png">
+                        <collision-poly>
+                            <point x="0.0376574" y="0.0741471" />
+                            <point x="0.5" y="0.0534789" />
+                            <point x="0.962343" y="0.0741471" />
+                            <point x="0.982445" y="0.487511" />
+                            <point x="0.948942" y="0.880207" />
+                            <point x="0.5" y="0.942211" />
+                            <point x="0.0376574" y="0.921543" />
+                            <point x="0.0175556" y="0.487511" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\play2.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.107759" />
+                            <point x="0.5" y="0.133621" />
+                            <point x="0.549451" y="0.349138" />
+                            <point x="0.851648" y="0.49569" />
+                            <point x="0.89011" y="0.913793" />
+                            <point x="0.5" y="0.974138" />
+                            <point x="0.296703" y="0.767241" />
+                            <point x="0.214286" y="0.49569" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.495614" original-source="F:\7. INSYAALLAH\imacha\picture\pleay3.png">
+                        <collision-poly>
+                            <point x="0.146782" y="0.107294" />
+                            <point x="0.5" y="0.133045" />
+                            <point x="0.548907" y="0.347633" />
+                            <point x="0.847784" y="0.493553" />
+                            <point x="0.885823" y="0.909854" />
+                            <point x="0.5" y="0.969939" />
+                            <point x="0.298937" y="0.763934" />
+                            <point x="0.217425" y="0.493553" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\play4.png">
+                        <collision-poly>
+                            <point x="0.142857" y="0.107759" />
+                            <point x="0.5" y="0.133621" />
+                            <point x="0.549451" y="0.349138" />
+                            <point x="0.851648" y="0.49569" />
+                            <point x="0.89011" y="0.913793" />
+                            <point x="0.5" y="0.974138" />
+                            <point x="0.296703" y="0.767241" />
+                            <point x="0.214286" y="0.49569" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NAMA" sid="673126357919947">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="161305532034293" speed="5">
+                    <frame duration="1" hotspotX="0.502041" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\NAMA.png">
+                        <collision-poly>
+                            <point x="0.0857143" y="0.134615" />
+                            <point x="0.497959" y="0.301282" />
+                            <point x="0.893878" y="0.166667" />
+                            <point x="0.995918" y="0.5" />
+                            <point x="0.77551" y="0.647436" />
+                            <point x="0.497959" y="0.711538" />
+                            <point x="0.163265" y="0.74359" />
+                            <point x="0.00816326" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level1" sid="159746201415291">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="level11" pingpong="0" repeatcount="0" repeatto="0" sid="170139719319404" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.491803" original-source="F:\7. INSYAALLAH\imacha\picture\level1b.png">
+                        <collision-poly>
+                            <point x="0.215617" y="0.813288" />
+                            <point x="0.490707" y="0.956284" />
+                            <point x="0.981407" y="0.714979" />
+                            <point x="0.981407" y="0.509423" />
+                            <point x="0.44238" y="0.107247" />
+                            <point x="0.18216" y="0" />
+                            <point x="0.0185932" y="0.303866" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="level12" pingpong="0" repeatcount="1" repeatto="0" sid="508590704039916" speed="5">
+                    <frame duration="1" hotspotX="0.503497" hotspotY="0.491803" original-source="E:\7. INSYAALLAH\1. GAME\picture\level1s.png">
+                        <collision-poly>
+                            <point x="0.160839" y="0.721311" />
+                            <point x="0.27972" y="0.983607" />
+                            <point x="0.762238" y="0.934426" />
+                            <point x="0.993007" y="0.622951" />
+                            <point x="0.993007" y="0.491803" />
+                            <point x="0.342657" y="0" />
+                            <point x="0.132867" y="0" />
+                            <point x="0.00699301" y="0.344262" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level2" sid="113069917186432">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="level21" pingpong="0" repeatcount="1" repeatto="0" sid="243656356052479" speed="5">
+                    <frame duration="1" hotspotX="0.527157" hotspotY="0.501493" original-source="F:\7. INSYAALLAH\imacha\picture\level2b.png">
+                        <collision-poly>
+                            <point x="0.00319489" y="0.13577" />
+                            <point x="0.483223" y="0.00298507" />
+                            <point x="0.662495" y="0.276299" />
+                            <point x="1" y="0.519684" />
+                            <point x="1" y="0.971119" />
+                            <point x="0.521774" y="0.900129" />
+                            <point x="0.514811" y="0.545821" />
+                            <point x="0.00444285" y="0.337609" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="level22" pingpong="0" repeatcount="1" repeatto="0" sid="822195874670716" speed="5">
+                    <frame duration="1" hotspotX="0.501597" hotspotY="0.501493" original-source="E:\7. INSYAALLAH\1. GAME\picture\level2s.png">
+                        <collision-poly>
+                            <point x="0" y="0.208955" />
+                            <point x="0.495208" y="0" />
+                            <point x="0.629393" y="0.349254" />
+                            <point x="0.955272" y="0.564179" />
+                            <point x="0.952077" y="0.952239" />
+                            <point x="0.501597" y="0.901493" />
+                            <point x="0.539936" y="0.668657" />
+                            <point x="0.0127796" y="0.325373" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="level3" sid="389039756587107">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="level31" pingpong="0" repeatcount="1" repeatto="0" sid="745505854969142" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.507317" original-source="F:\7. INSYAALLAH\imacha\picture\level3b.png">
+                        <collision-poly>
+                            <point x="0.00588235" y="0.00487805" />
+                            <point x="0.994118" y="0.191564" />
+                            <point x="0.994118" y="0.491883" />
+                            <point x="0.97474" y="0.995122" />
+                            <point x="0.5" y="0.743503" />
+                            <point x="0.393426" y="0.678569" />
+                            <point x="0.219031" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="level32" pingpong="0" repeatcount="1" repeatto="0" sid="468404878332727" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502439" original-source="E:\7. INSYAALLAH\1. GAME\picture\level3s.png">
+                        <collision-poly>
+                            <point x="0.00588235" y="0.00487805" />
+                            <point x="0.994118" y="0.204878" />
+                            <point x="0.994118" y="0.487805" />
+                            <point x="0.9" y="0.995122" />
+                            <point x="0.5" y="0.741463" />
+                            <point x="0.394118" y="0.673171" />
+                            <point x="0.211765" y="0.497561" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backmap" sid="724279835095166">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="518004813891845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\backbak.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="226345447565671">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ll1" sid="469947940630181">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="397526319427187" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SpriteFont" sid="381593000750451">
+            <plugin id="Spritefont2" />
+            <texture />
+        </object-type>
+        <object-type name="Text2" sid="118723357533491">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="back" sid="776440990698566">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="789515557295754" speed="5">
+                    <frame duration="1" hotspotX="0.500583" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\bak1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="back2" sid="475750256656935">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="516202524991759" speed="5">
+                    <frame duration="1" hotspotX="0.500583" hotspotY="0.5" original-source="F:\7. INSYAALLAH\imacha\picture\bak2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas" sid="625559128489965">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="397483789691107">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="391165286115826" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menuKalah" sid="134161659057507">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="223855441244203" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504237" original-source="F:\7. INSYAALLAH\1. GAME\picture\menu kalah 1.png">
+                        <collision-poly>
+                            <point x="0.0494179" y="0.0682865" />
+                            <point x="0.5" y="0.0402251" />
+                            <point x="0.950582" y="0.0682865" />
+                            <point x="0.970992" y="0.5" />
+                            <point x="0.950582" y="0.931714" />
+                            <point x="0.5" y="0.959775" />
+                            <point x="0.0494179" y="0.931714" />
+                            <point x="0.0274382" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.504237" original-source="F:\7. INSYAALLAH\1. GAME\picture\menu kalah 2.png">
+                        <collision-poly>
+                            <point x="0.046865" y="0.0648466" />
+                            <point x="0.5" y="0.0365616" />
+                            <point x="0.953135" y="0.0648466" />
+                            <point x="0.97366" y="0.5" />
+                            <point x="0.953135" y="0.935153" />
+                            <point x="0.5" y="0.963438" />
+                            <point x="0.046865" y="0.935153" />
+                            <point x="0.0247608" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="restart" sid="462565851368083">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="439915090392745">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="458705066990656" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\restart.png">
+                        <collision-poly>
+                            <point x="0.02" y="0.107143" />
+                            <point x="0.5" y="0.0714286" />
+                            <point x="0.986667" y="0.0714286" />
+                            <point x="0.986667" y="0.928571" />
+                            <point x="0.0133333" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="exit" sid="199732337414478">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="176568856760373" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\exit.png">
+                        <collision-poly>
+                            <point x="0.0131579" y="0.0714286" />
+                            <point x="0.986842" y="0.0714286" />
+                            <point x="0.980263" y="0.892857" />
+                            <point x="0.5" y="0.928571" />
+                            <point x="0.0131579" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="full" sid="206505303786651">
+            <plugin id="video" />
+        </object-type>
+        <object-type name="menang" sid="756216020665409">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="669622746303345">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="4" loop="1" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="962017504653993" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bintang3.png">
+                        <collision-poly>
+                            <point x="0.0356033" y="0.0496056" />
+                            <point x="0.5" y="0.0208132" />
+                            <point x="0.964396" y="0.0496056" />
+                            <point x="0.98806" y="0.497944" />
+                            <point x="0.967355" y="0.954507" />
+                            <point x="0.5" y="0.9833" />
+                            <point x="0.0326454" y="0.954507" />
+                            <point x="0.0119398" y="0.497944" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\menumenang1.png">
+                        <collision-poly>
+                            <point x="0.0269633" y="0.0378483" />
+                            <point x="0.5" y="0.00843867" />
+                            <point x="0.973037" y="0.0378483" />
+                            <point x="0.993994" y="0.5" />
+                            <point x="0.973037" y="0.962152" />
+                            <point x="0.5" y="0.991562" />
+                            <point x="0.0269633" y="0.962152" />
+                            <point x="0.00600595" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\menumenang3.png">
+                        <collision-poly>
+                            <point x="0.0299571" y="0.0418902" />
+                            <point x="0.5" y="0.0126046" />
+                            <point x="0.970043" y="0.0418902" />
+                            <point x="0.993994" y="0.497908" />
+                            <point x="0.973037" y="0.962294" />
+                            <point x="0.5" y="0.991579" />
+                            <point x="0.0269633" y="0.962294" />
+                            <point x="0.00600595" y="0.497908" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\menumenang1.png">
+                        <collision-poly>
+                            <point x="0.0269633" y="0.0378483" />
+                            <point x="0.5" y="0.00843867" />
+                            <point x="0.973037" y="0.0378483" />
+                            <point x="0.993994" y="0.5" />
+                            <point x="0.973037" y="0.962151" />
+                            <point x="0.5" y="0.991561" />
+                            <point x="0.0269633" y="0.962151" />
+                            <point x="0.00600595" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="lanjut" sid="360556402721591">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="349229066514006">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="601884934336385" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\lanjut.png">
+                        <collision-poly>
+                            <point x="0.0197368" y="0.107143" />
+                            <point x="0.5" y="0.0714286" />
+                            <point x="0.986842" y="0.0714286" />
+                            <point x="0.986842" y="0.928571" />
+                            <point x="0.0131579" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menumain" sid="287061172817087">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="675106540197410">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="653013568322086" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="F:\7. INSYAALLAH\1. GAME\picture\main menu.png">
+                        <collision-poly>
+                            <point x="0.0131579" y="0.0714286" />
+                            <point x="0.986842" y="0.0714286" />
+                            <point x="0.980263" y="0.892857" />
+                            <point x="0.5" y="0.928571" />
+                            <point x="0.0131579" y="0.928571" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="heroTamnah" sid="189496530280623">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="BoundToLayout" sid="957617980654788">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="8Direction" sid="812982402848891">
+                    <behavior id="EightDir" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="diam" pingpong="0" repeatcount="1" repeatto="0" sid="618895602822004" speed="5">
+                    <frame duration="1" hotspotX="0.504202" hotspotY="0.514286" original-source="F:\7. INSYAALLAH\1. GAME\picture\hero tambah.png">
+                        <collision-poly>
+                            <point x="0" y="0.117886" />
+                            <point x="0.5" y="0.043362" />
+                            <point x="0.732771" y="0.225879" />
+                            <point x="0.89443" y="0.515387" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.993706" />
+                            <point x="0.178179" y="0.852349" />
+                            <point x="0.164393" y="0.538245" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="tembak" pingpong="0" repeatcount="1" repeatto="0" sid="541290734792912" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505682" original-source="F:\7. INSYAALLAH\1. GAME\picture\hero tambah 2.png">
+                        <collision-poly>
+                            <point x="0" y="0.125" />
+                            <point x="0.421875" y="0" />
+                            <point x="0.664063" y="0.244318" />
+                            <point x="0.835938" y="0.511364" />
+                            <point x="1" y="0.835227" />
+                            <point x="0.5" y="0.982955" />
+                            <point x="0.171875" y="0.846591" />
+                            <point x="0.179688" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="jalan" pingpong="0" repeatcount="1" repeatto="0" sid="351633489914881" speed="5">
+                    <frame duration="1" hotspotX="0.504202" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\hero tambah 3.png">
+                        <collision-poly>
+                            <point x="0.00840336" y="0.107955" />
+                            <point x="0.495798" y="0.0511364" />
+                            <point x="0.689076" y="0.210227" />
+                            <point x="0.87395" y="0.5" />
+                            <point x="0.966387" y="0.977273" />
+                            <point x="0.436975" y="0.994318" />
+                            <point x="0.218487" y="0.852273" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504202" hotspotY="0.502857" original-source="E:\7. INSYAALLAH\1. GAME\picture\hero tambah 4.png">
+                        <collision-poly>
+                            <point x="0.00840336" y="0.159118" />
+                            <point x="0.407563" y="0.00571429" />
+                            <point x="0.663866" y="0.244343" />
+                            <point x="0.812125" y="0.500016" />
+                            <point x="0.991597" y="1" />
+                            <point x="0.5" y="0.982955" />
+                            <point x="0.219088" y="0.846596" />
+                            <point x="0.180072" y="0.500016" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.504202" hotspotY="0.502857" original-source="E:\7. INSYAALLAH\1. GAME\picture\hero tambah.png">
+                        <collision-poly>
+                            <point x="0.0166655" y="0.125029" />
+                            <point x="0.495869" y="0.056849" />
+                            <point x="0.685898" y="0.215935" />
+                            <point x="0.867665" y="0.505698" />
+                            <point x="0.958548" y="0.982955" />
+                            <point x="0.495869" y="0.994318" />
+                            <point x="0.223219" y="0.857959" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="musuhtambah" sid="295040097177281">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="live4" sid="537561943211517" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="811920892014065">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="700006950083364">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Sine" sid="913162352834910">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="1" name="diam" pingpong="0" repeatcount="1" repeatto="0" sid="706438114466128" speed="5">
+                    <frame duration="1" hotspotX="0.504587" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\musuh tambah.png">
+                        <collision-poly>
+                            <point x="0.266089" y="0.219646" />
+                            <point x="0.454128" y="0.00757576" />
+                            <point x="0.872265" y="0.0454545" />
+                            <point x="0.990826" y="0.558313" />
+                            <point x="0.919577" y="0.764156" />
+                            <point x="0.626665" y="0.986445" />
+                            <point x="0.291323" y="0.992424" />
+                            <point x="0.00917431" y="0.545355" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\musuh tambah2.png">
+                        <collision-poly>
+                            <point x="0.360384" y="0.298554" />
+                            <point x="0.495496" y="0.0150367" />
+                            <point x="0.963886" y="0.186639" />
+                            <point x="0.963887" y="0.5" />
+                            <point x="0.738699" y="0.783517" />
+                            <point x="0.702668" y="0.970041" />
+                            <point x="0.270309" y="0.984963" />
+                            <point x="0.0180984" y="0.522383" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="tembak" pingpong="0" repeatcount="1" repeatto="0" sid="159396022475567" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\musuh tambah2.png">
+                        <collision-poly>
+                            <point x="0.262276" y="0.215957" />
+                            <point x="0.5" y="0.0265951" />
+                            <point x="0.990909" y="0.209645" />
+                            <point x="1" y="0.636364" />
+                            <point x="0.747125" y="0.808047" />
+                            <point x="0.754546" y="0.992424" />
+                            <point x="0.286147" y="0.983534" />
+                            <point x="0.00909091" y="0.575758" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="peluruTambah" sid="817218631434234">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="229188785748010">
+                    <behavior id="Bullet" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="168284204423392" speed="5">
+                    <frame duration="1" hotspotX="0.521739" hotspotY="0.521739" original-source="F:\7. INSYAALLAH\1. GAME\picture\ball.png">
+                        <collision-poly>
+                            <point x="0.217391" y="0.217391" />
+                            <point x="0.478261" y="0.0869565" />
+                            <point x="0.782609" y="0.217391" />
+                            <point x="0.913043" y="0.478261" />
+                            <point x="0.782609" y="0.782609" />
+                            <point x="0.478261" y="0.913043" />
+                            <point x="0.217391" y="0.782609" />
+                            <point x="0.0869565" y="0.478261" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite14" sid="773548077950012">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="618478293726175" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="JUMLAHMOBIL" sid="208811047987508">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="292444210976019">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="nol" pingpong="0" repeatcount="1" repeatto="0" sid="548625488433655" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.52381" original-source="E:\7. INSYAALLAH\1. GAME\picture\JMOBIL.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.0952381" />
+                            <point x="0.493333" y="0.047619" />
+                            <point x="0.986667" y="0.047619" />
+                            <point x="0.973333" y="0.904762" />
+                            <point x="0.493333" y="0.952381" />
+                            <point x="0.0266667" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="satu" pingpong="0" repeatcount="1" repeatto="0" sid="951497382204723" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52381" original-source="E:\7. INSYAALLAH\1. GAME\picture\JMOBIL1.png" />
+                </animation>
+                <animation framecount="1" loop="0" name="dua" pingpong="0" repeatcount="1" repeatto="0" sid="233713398205318" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\JMOBIL2.png">
+                        <collision-poly>
+                            <point x="0.027027" y="0.0909091" />
+                            <point x="0.972973" y="0.0909091" />
+                            <point x="0.986486" y="0.954545" />
+                            <point x="0.5" y="0.909091" />
+                            <point x="0.027027" y="0.909091" />
+                            <point x="0.0135135" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="tiga" pingpong="0" repeatcount="1" repeatto="0" sid="311686377227427" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.52381" original-source="E:\7. INSYAALLAH\1. GAME\picture\JMOBIL3.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.0952381" />
+                            <point x="0.493333" y="0.047619" />
+                            <point x="0.986667" y="0.047619" />
+                            <point x="0.973333" y="0.904762" />
+                            <point x="0.493333" y="0.952381" />
+                            <point x="0.0266667" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="jmobile" sid="374355926682340">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="menang" sid="429982022277404" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="468822660077650">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="procher" sid="735308508149431">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="577470134296411">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="342806096993909" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.52381" original-source="E:\7. INSYAALLAH\1. GAME\picture\POACHERS.png">
+                        <collision-poly>
+                            <point x="0.0266667" y="0.0952381" />
+                            <point x="0.493333" y="0.047619" />
+                            <point x="0.986667" y="0.047619" />
+                            <point x="0.973333" y="0.904762" />
+                            <point x="0.493333" y="0.952381" />
+                            <point x="0.0266667" y="0.904762" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="poacert" sid="105256295766523">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="468507920938024">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="gamepad1" sid="848754575254332">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="215737750539776">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="710673502654925" speed="5">
+                    <frame duration="1" hotspotX="0.506849" hotspotY="0.506849" original-source="E:\7. INSYAALLAH\1. GAME\picture\gamepad1.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="gamepad_middle" sid="344310559976564">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="DragDrop" sid="322982715416789">
+                    <behavior id="DragnDrop" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="614017661080276" speed="5">
+                    <frame duration="1" hotspotX="0.506667" hotspotY="0.506667" original-source="E:\7. INSYAALLAH\1. GAME\picture\gamepad1.png">
+                        <collision-poly>
+                            <point x="0.155772" y="0.155772" />
+                            <point x="0.48813" y="0.0133333" />
+                            <point x="0.844228" y="0.155772" />
+                            <point x="0.962927" y="0.48813" />
+                            <point x="0.820487" y="0.820487" />
+                            <point x="0.48813" y="0.962927" />
+                            <point x="0.179512" y="0.820487" />
+                            <point x="0.0133333" y="0.48813" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="YoutubePlayer" sid="769040061161320">
+            <plugin id="rex_youtube_player" />
+        </object-type>
+        <object-type name="nyawaya" sid="264080877958075">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="112022811227679">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="tiga" pingpong="0" repeatcount="1" repeatto="0" sid="840013962828632" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="E:\7. INSYAALLAH\1. GAME\picture\nya2.png">
+                        <collision-poly>
+                            <point x="0.137188" y="0.208505" />
+                            <point x="0.5" y="0.620027" />
+                            <point x="0.885487" y="0.174211" />
+                            <point x="0.885487" y="0.482853" />
+                            <point x="0.794785" y="0.688615" />
+                            <point x="0.5" y="0.722908" />
+                            <point x="0.0918367" y="0.860082" />
+                            <point x="0.159864" y="0.482853" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="dua" pingpong="0" repeatcount="1" repeatto="0" sid="986212476998393" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.518519" original-source="E:\7. INSYAALLAH\1. GAME\picture\nya3.png">
+                        <collision-poly>
+                            <point x="0.137188" y="0.208505" />
+                            <point x="0.5" y="0.620027" />
+                            <point x="0.885487" y="0.174211" />
+                            <point x="0.885487" y="0.482853" />
+                            <point x="0.794785" y="0.688615" />
+                            <point x="0.5" y="0.722908" />
+                            <point x="0.114512" y="0.825789" />
+                            <point x="0.114512" y="0.482853" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="satu" pingpong="0" repeatcount="1" repeatto="0" sid="812519233281925" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\nyawa1.png">
+                        <collision-poly>
+                            <point x="0.119048" y="0.178571" />
+                            <point x="0.5" y="0.607143" />
+                            <point x="0.904762" y="0.142857" />
+                            <point x="0.880952" y="0.5" />
+                            <point x="0.809524" y="0.714286" />
+                            <point x="0.0714286" y="0.892857" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="nol" pingpong="0" repeatcount="1" repeatto="0" sid="258638364662828" speed="5">
+                    <frame duration="1" hotspotX="0.512195" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\nya0.png">
+                        <collision-poly>
+                            <point x="0.120347" y="0.177919" />
+                            <point x="0.5" y="0.569729" />
+                            <point x="0.904685" y="0.138074" />
+                            <point x="0.896341" y="0.490039" />
+                            <point x="0.817073" y="0.709186" />
+                            <point x="0.5" y="0.788877" />
+                            <point x="0.107831" y="0.828722" />
+                            <point x="0.0285623" y="0.490039" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolgun" sid="541854900895443">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="reload1" sid="855406821231883" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="486585688622854">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609112716564717" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\tombolgun.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="0.83871" y="0.16129" />
+                            <point x="0.983871" y="0.5" />
+                            <point x="0.83871" y="0.83871" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.16129" y="0.83871" />
+                            <point x="0.0322581" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="bintang" sid="224820678562072">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="951814272370681">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="tiga" pingpong="0" repeatcount="1" repeatto="0" sid="283064783361680" speed="5">
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bintang3.png">
+                        <collision-poly>
+                            <point x="0.208459" y="0.206918" />
+                            <point x="0.5" y="0.0295914" />
+                            <point x="0.791541" y="0.206918" />
+                            <point x="0.993376" y="0.5" />
+                            <point x="0.970949" y="0.970408" />
+                            <point x="0.5" y="0.992574" />
+                            <point x="0.0290502" y="0.970408" />
+                            <point x="0.00662401" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="dua" pingpong="0" repeatcount="1" repeatto="0" sid="665366711475691" speed="5">
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bintang2.png">
+                        <collision-poly>
+                            <point x="0.204969" y="0.246269" />
+                            <point x="0.498965" y="0.00497512" />
+                            <point x="0.795031" y="0.246269" />
+                            <point x="0.99793" y="0.5" />
+                            <point x="0.979296" y="0.975124" />
+                            <point x="0.498965" y="0.997512" />
+                            <point x="0.0207039" y="0.975124" />
+                            <point x="0.00207039" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="satu" pingpong="0" repeatcount="1" repeatto="0" sid="101712894331428" speed="5">
+                    <frame duration="1" hotspotX="0.501035" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\bintang1.png">
+                        <collision-poly>
+                            <point x="0.204969" y="0.246269" />
+                            <point x="0.498965" y="0.00497512" />
+                            <point x="0.795031" y="0.246269" />
+                            <point x="0.99793" y="0.5" />
+                            <point x="0.979296" y="0.975124" />
+                            <point x="0.498965" y="0.997512" />
+                            <point x="0.0207039" y="0.975124" />
+                            <point x="0.00207039" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemmenu1" sid="361163297711573">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="367682222773215">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="456524729312648" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.512195" original-source="E:\7. INSYAALLAH\1. GAME\picture\enmmenu.png">
+                        <collision-poly>
+                            <point x="0.264706" y="0.219512" />
+                            <point x="0.5" y="0.0243902" />
+                            <point x="0.735294" y="0.219512" />
+                            <point x="0.970588" y="0.487805" />
+                            <point x="0.676471" y="0.731707" />
+                            <point x="0.5" y="0.97561" />
+                            <point x="0.205882" y="0.829268" />
+                            <point x="0.0294118" y="0.487805" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemmenu2" sid="602352827410516">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mobil2" sid="960926762913336" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="538537599559263">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="743234999040859" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\enmmenu2.png">
+                        <collision-poly>
+                            <point x="0.119565" y="0.261905" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.923913" y="0.833333" />
+                            <point x="0.5" y="0.809524" />
+                            <point x="0.076087" y="0.833333" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="enemmenu3" sid="210122594149305">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="mobil1" sid="430512327925020" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="615800270127004">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="235025316629209" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\enmmenu3.png">
+                        <collision-poly>
+                            <point x="0.129032" y="0.129032" />
+                            <point x="0.5" y="0.0806452" />
+                            <point x="0.903226" y="0.0967742" />
+                            <point x="0.870968" y="0.870968" />
+                            <point x="0.5" y="0.854839" />
+                            <point x="0.0967742" y="0.903226" />
+                            <point x="0.016129" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="mobil1" sid="660744478459787">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="451860635124447">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="mobil2" sid="925338342262343">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="980159751127331">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="jmobil1" sid="505866133126380">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="tmobil1" sid="959180242784555" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="822382975050543">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="enemenem" sid="375298680240831">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="tenemenem" sid="929947983137324" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="912909739976718">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="jmobile3" sid="911351254689684">
+            <plugin id="Text" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="304364263364671">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <container>
+                <type>jmobile3</type>
+                <type>Player</type>
+            </container>
+        </object-type>
+        <object-type name="totalenemey" sid="821698894286064">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="tenemenem" sid="969612348987598" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Anchor" sid="486622841923677">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+        </object-type>
+        <object-type name="jumlah" sid="470272007264886">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="jumlah2" sid="349075548012703">
+            <plugin id="Text" />
+            <instance-variables>
+                <instance-variable name="jumlah" sid="685019231315972" type="number" />
+            </instance-variables>
+        </object-type>
+        <object-type name="tombolgun2" sid="513136399735712">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="271636622950034">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="251055289051884" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\tombolgun2.png">
+                        <collision-poly>
+                            <point x="0.167339" y="0.167339" />
+                            <point x="0.5" y="0.03125" />
+                            <point x="0.832661" y="0.167339" />
+                            <point x="0.96875" y="0.5" />
+                            <point x="0.832661" y="0.832661" />
+                            <point x="0.5" y="0.96875" />
+                            <point x="0.167339" y="0.832661" />
+                            <point x="0.03125" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tombolreloaded" sid="923014279897688">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="689358325239814">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="837990856084580" speed="6">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\reloaded1.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="0.83871" y="0.16129" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.83871" y="0.83871" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.16129" y="0.83871" />
+                            <point x="0.016129" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="1" name="load" pingpong="0" repeatcount="1" repeatto="0" sid="102312847159137" speed="5">
+                    <frame duration="1" hotspotX="0.606061" hotspotY="0.615385" original-source="E:\7. INSYAALLAH\1. GAME\picture\load1.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.184615" />
+                            <point x="0.484848" y="0.0153846" />
+                            <point x="0.833333" y="0.169231" />
+                            <point x="0.969697" y="0.507692" />
+                            <point x="0.818182" y="0.830769" />
+                            <point x="0.484848" y="0.969231" />
+                            <point x="0.166667" y="0.830769" />
+                            <point x="0.030303" y="0.507692" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.606061" hotspotY="0.597015" original-source="E:\7. INSYAALLAH\1. GAME\picture\load3.png">
+                        <collision-poly>
+                            <point x="0.176471" y="0.188683" />
+                            <point x="0.485294" y="0.0294052" />
+                            <point x="0.823529" y="0.174204" />
+                            <point x="0.955882" y="0.49276" />
+                            <point x="0.823529" y="0.825796" />
+                            <point x="0.485294" y="0.956115" />
+                            <point x="0.161765" y="0.825796" />
+                            <point x="0.0441176" y="0.49276" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.606061" hotspotY="0.615385" original-source="E:\7. INSYAALLAH\1. GAME\picture\load3.png">
+                        <collision-poly>
+                            <point x="0.151515" y="0.153846" />
+                            <point x="0.5" y="0" />
+                            <point x="0.848485" y="0.153846" />
+                            <point x="0.984848" y="0.492308" />
+                            <point x="0.848485" y="0.846154" />
+                            <point x="0.5" y="0.984615" />
+                            <point x="0.151515" y="0.846154" />
+                            <point x="0.0151515" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="reloaded2" sid="391845639592912">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="649818108177897">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="565474616283021" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\reloaded2.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="0.83871" y="0.16129" />
+                            <point x="0.967742" y="0.5" />
+                            <point x="0.83871" y="0.83871" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.16129" y="0.83871" />
+                            <point x="0.016129" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas2" sid="813495511530399">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="912595671790390">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="355448372488794" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\batas2.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="0.83871" y="0.16129" />
+                            <point x="0.983871" y="0.5" />
+                            <point x="0.83871" y="0.83871" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.16129" y="0.83871" />
+                            <point x="0.0322581" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="batas3" sid="197086677114493">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Anchor" sid="985564598887435">
+                    <behavior id="Anchor" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="609577005087381" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\batas3.png">
+                        <collision-poly>
+                            <point x="0.16129" y="0.16129" />
+                            <point x="0.5" y="0.016129" />
+                            <point x="0.83871" y="0.16129" />
+                            <point x="0.983871" y="0.5" />
+                            <point x="0.83871" y="0.83871" />
+                            <point x="0.5" y="0.967742" />
+                            <point x="0.16129" y="0.83871" />
+                            <point x="0.0322581" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backt1" sid="435191320897531">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="657812055028380" speed="5">
+                    <frame duration="1" hotspotX="0.501672" hotspotY="0.516129" original-source="E:\7. INSYAALLAH\1. GAME\picture\air.png">
+                        <collision-poly>
+                            <point x="0.0398877" y="0.364204" />
+                            <point x="0.498339" y="0.213319" />
+                            <point x="0.963434" y="0.334027" />
+                            <point x="0.993333" y="0.484912" />
+                            <point x="0.966757" y="0.69615" />
+                            <point x="0.498339" y="0.786681" />
+                            <point x="0.0398877" y="0.635796" />
+                            <point x="0.0099887" y="0.484912" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite15" sid="741734826905851">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="944404712786525" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\backroundtambahan2.png">
+                        <collision-poly>
+                            <point x="0.0483871" y="0.375" />
+                            <point x="0.5" y="0" />
+                            <point x="0.951613" y="0.375" />
+                            <point x="0.994624" y="0.5" />
+                            <point x="0.973118" y="0.791667" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.0268817" y="0.791667" />
+                            <point x="0.00537634" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite16" sid="735091371980561">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="113146272374263" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\backroundtambahan3.png">
+                        <collision-poly>
+                            <point x="0.0714286" y="0.357143" />
+                            <point x="0.5" y="0.142857" />
+                            <point x="0.928571" y="0.357143" />
+                            <point x="0.971429" y="0.5" />
+                            <point x="0.928571" y="0.642857" />
+                            <point x="0.5" y="0.857143" />
+                            <point x="0.0714286" y="0.642857" />
+                            <point x="0.0285714" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite27" sid="268463868059298">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="474964507218606" speed="5">
+                    <frame duration="1" hotspotX="0.501683" hotspotY="0.517241" original-source="E:\7. INSYAALLAH\1. GAME\picture\backroundtambahan.png">
+                        <collision-poly>
+                            <point x="0.03367" y="0.344828" />
+                            <point x="0.498316" y="0.172414" />
+                            <point x="0.969697" y="0.310345" />
+                            <point x="1" y="0.482759" />
+                            <point x="0.973064" y="0.724138" />
+                            <point x="0.498316" y="0.827586" />
+                            <point x="0.03367" y="0.655172" />
+                            <point x="0.003367" y="0.482759" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite28" sid="217187896096483">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="222663199623891">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="503515305412845" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Background3" sid="954405617674708">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\7. INSYAALLAH\1. GAME\picture\background.png" />
+        </object-type>
+        <object-type name="Background2" sid="586560916961436">
+            <plugin id="TiledBg" />
+            <texture original-source="E:\7. INSYAALLAH\1. GAME\picture\background2.png" />
+        </object-type>
+        <object-type name="backgroundtambahan21" sid="299339823190157">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="910389217064104" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\backroundtambahan4.png">
+                        <collision-poly>
+                            <point x="0.0294811" y="0.0801282" />
+                            <point x="0.5" y="0.0224359" />
+                            <point x="0.997642" y="0.00641026" />
+                            <point x="0.996462" y="0.990385" />
+                            <point x="0.00235849" y="0.99359" />
+                            <point x="0.00235849" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="menu1" sid="630886245987000">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="442511579368824" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501916" original-source="E:\7. INSYAALLAH\1. GAME\picture\menuyaya.png">
+                        <collision-poly>
+                            <point x="0.0223881" y="0.0344828" />
+                            <point x="0.5" y="0.00383142" />
+                            <point x="0.977612" y="0.0344828" />
+                            <point x="0.997512" y="0.498084" />
+                            <point x="0.977612" y="0.965517" />
+                            <point x="0.5" y="0.996169" />
+                            <point x="0.0223881" y="0.965517" />
+                            <point x="0.00248756" y="0.498084" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Text3" sid="709451054406121">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite29" sid="365747835466040">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="776899112399801" speed="5">
+                    <frame duration="1" hotspotX="0.50211" hotspotY="0.533333" original-source="E:\7. INSYAALLAH\1. GAME\picture\bar 3.png">
+                        <collision-poly>
+                            <point x="0.00843882" y="0.133333" />
+                            <point x="0.49789" y="0.0666667" />
+                            <point x="0.991561" y="0.133333" />
+                            <point x="0.991561" y="0.866667" />
+                            <point x="0.49789" y="0.933333" />
+                            <point x="0.00421941" y="0.933333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite30" sid="237293955314844">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="192500511807838" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\enmmenu2.png">
+                        <collision-poly>
+                            <point x="0.119565" y="0.261905" />
+                            <point x="0.5" y="0.0238095" />
+                            <point x="0.967391" y="0.5" />
+                            <point x="0.923913" y="0.833333" />
+                            <point x="0.5" y="0.809524" />
+                            <point x="0.076087" y="0.833333" />
+                            <point x="0.0108696" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite31" sid="934160710818720">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="848290297282602" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\enmmenu3.png">
+                        <collision-poly>
+                            <point x="0.129032" y="0.129032" />
+                            <point x="0.5" y="0.0806452" />
+                            <point x="0.903226" y="0.0967742" />
+                            <point x="0.870968" y="0.870968" />
+                            <point x="0.5" y="0.854839" />
+                            <point x="0.0967742" y="0.903226" />
+                            <point x="0.016129" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite32" sid="660535821851564">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="980328086904736" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497817" original-source="E:\7. INSYAALLAH\1. GAME\picture\play1.png">
+                        <collision-poly>
+                            <point x="0.148352" y="0.113537" />
+                            <point x="0.5" y="0.113537" />
+                            <point x="0.549451" y="0.353712" />
+                            <point x="0.818681" y="0.497817" />
+                            <point x="0.846154" y="0.877729" />
+                            <point x="0.5" y="0.956332" />
+                            <point x="0.285714" y="0.772926" />
+                            <point x="0.197802" y="0.497817" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite33" sid="786381787625567">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="560928668443162" speed="5">
+                    <frame duration="1" hotspotX="0.502439" hotspotY="0.502439" original-source="E:\7. INSYAALLAH\1. GAME\picture\cendrawasi.png">
+                        <collision-poly>
+                            <point x="0.0195122" y="0.0195122" />
+                            <point x="0.980488" y="0.0195122" />
+                            <point x="0.980488" y="0.980488" />
+                            <point x="0.497561" y="0.995122" />
+                            <point x="0.0195122" y="0.980488" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite34" sid="575428612488497">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="365385360820370" speed="5">
+                    <frame duration="1" hotspotX="0.507692" hotspotY="0.507692" original-source="E:\7. INSYAALLAH\1. GAME\picture\reload1.png">
+                        <collision-poly>
+                            <point x="0.153846" y="0.153846" />
+                            <point x="0.492308" y="0.0153846" />
+                            <point x="0.830769" y="0.169231" />
+                            <point x="0.969231" y="0.492308" />
+                            <point x="0.830769" y="0.830769" />
+                            <point x="0.492308" y="0.969231" />
+                            <point x="0.153846" y="0.846154" />
+                            <point x="0.0153846" y="0.492308" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite35" sid="841567243033992">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="396977434419325" speed="5">
+                    <frame duration="1" hotspotX="0.500583" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\b2.png">
+                        <collision-poly>
+                            <point x="0.00350058" y="0.00414938" />
+                            <point x="0.997666" y="0.00207469" />
+                            <point x="0.998833" y="0.997925" />
+                            <point x="0.00233372" y="0.995851" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite36" sid="983416917788938">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="882483551009194" speed="5">
+                    <frame duration="1" hotspotX="0.500583" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\b2.png">
+                        <collision-poly>
+                            <point x="0.00350058" y="0.00414938" />
+                            <point x="0.997666" y="0.00207469" />
+                            <point x="0.998833" y="0.997925" />
+                            <point x="0.00233372" y="0.995851" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite37" sid="662891838608531">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="837384652801488">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="672118448775722" speed="5">
+                    <frame duration="1" hotspotX="0.502439" hotspotY="0.502439" original-source="E:\7. INSYAALLAH\1. GAME\picture\cendrawasi.png">
+                        <collision-poly>
+                            <point x="0.0195122" y="0.0195122" />
+                            <point x="0.980488" y="0.0195122" />
+                            <point x="0.980488" y="0.980488" />
+                            <point x="0.497561" y="0.995122" />
+                            <point x="0.0195122" y="0.980488" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Lepas" pingpong="0" repeatcount="1" repeatto="0" sid="477593671328289" speed="5">
+                    <frame duration="1" hotspotX="0.502793" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\cendrawasi2.png">
+                        <collision-poly>
+                            <point x="0.0726257" y="0.0747126" />
+                            <point x="0.497207" y="0.270115" />
+                            <point x="0.681564" y="0.327586" />
+                            <point x="0.860335" y="0.5" />
+                            <point x="0.592179" y="0.58046" />
+                            <point x="0.497207" y="0.965517" />
+                            <point x="0.318436" y="0.672414" />
+                            <point x="0.0335196" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite38" sid="614044589329100">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="616343930885141">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="455572228282159" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.503448" original-source="E:\7. INSYAALLAH\1. GAME\picture\burung4.png">
+                        <collision-poly>
+                            <point x="0.0348398" y="0.0361755" />
+                            <point x="0.5" y="0.0226332" />
+                            <point x="0.96516" y="0.0361755" />
+                            <point x="0.978643" y="0.496614" />
+                            <point x="0.96516" y="0.963824" />
+                            <point x="0.5" y="0.984138" />
+                            <point x="0.0348398" y="0.963824" />
+                            <point x="0.0213569" y="0.496614" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Lepas" pingpong="0" repeatcount="1" repeatto="0" sid="311066077348242" speed="5">
+                    <frame duration="1" hotspotX="0.503937" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\burung4.png">
+                        <collision-poly>
+                            <point x="0.362205" y="0.418182" />
+                            <point x="0.496063" y="0.0818182" />
+                            <point x="0.606299" y="0.454545" />
+                            <point x="0.598425" y="0.5" />
+                            <point x="0.984252" y="0.981818" />
+                            <point x="0.496063" y="0.709091" />
+                            <point x="0.110236" y="0.872727" />
+                            <point x="0.173228" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ka" sid="941994475361215">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Sine" sid="919198383255024">
+                    <behavior id="Sin" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="627275538203742" speed="5">
+                    <frame duration="1" hotspotX="0.502439" hotspotY="0.502439" original-source="E:\7. INSYAALLAH\1. GAME\picture\kangoro.png">
+                        <collision-poly>
+                            <point x="0.0195122" y="0.0195122" />
+                            <point x="0.980488" y="0.0195122" />
+                            <point x="0.995122" y="0.497561" />
+                            <point x="0.980488" y="0.980488" />
+                            <point x="0.497561" y="0.995122" />
+                            <point x="0.0195122" y="0.980488" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Lepas" pingpong="0" repeatcount="1" repeatto="0" sid="471089847985987" speed="5">
+                    <frame duration="1" hotspotX="0.502674" hotspotY="0.502994" original-source="E:\7. INSYAALLAH\1. GAME\picture\kangoro2.png">
+                        <collision-poly>
+                            <point x="0.0534759" y="0.0598802" />
+                            <point x="0.604278" y="0.443114" />
+                            <point x="0.652406" y="0.497006" />
+                            <point x="0.962567" y="0.958084" />
+                            <point x="0.497326" y="0.958084" />
+                            <point x="0.187166" y="0.790419" />
+                            <point x="0.0962567" y="0.497006" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite39" sid="125036947609667">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="play" pingpong="0" repeatcount="1" repeatto="0" sid="884740805440331" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\playsound.png">
+                        <collision-poly>
+                            <point x="0.158537" y="0.158537" />
+                            <point x="0.5" y="0.0121951" />
+                            <point x="0.841463" y="0.158537" />
+                            <point x="0.987805" y="0.5" />
+                            <point x="0.841463" y="0.841463" />
+                            <point x="0.5" y="0.987805" />
+                            <point x="0.158537" y="0.841463" />
+                            <point x="0.0121951" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="pause" pingpong="0" repeatcount="1" repeatto="0" sid="735776515971924" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\pausedsound.png">
+                        <collision-poly>
+                            <point x="0.152778" y="0.152778" />
+                            <point x="0.5" y="0.0138889" />
+                            <point x="0.847222" y="0.152778" />
+                            <point x="0.986111" y="0.5" />
+                            <point x="0.847222" y="0.847222" />
+                            <point x="0.5" y="0.986111" />
+                            <point x="0.152778" y="0.847222" />
+                            <point x="0.0138889" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite40" sid="762760203015823">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="120613961829290" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite41" sid="908887531577573">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="860564330828668" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.497817" original-source="E:\7. INSYAALLAH\1. GAME\picture\play1.png">
+                        <collision-poly>
+                            <point x="0.148352" y="0.113537" />
+                            <point x="0.5" y="0.113537" />
+                            <point x="0.549451" y="0.353712" />
+                            <point x="0.818681" y="0.497817" />
+                            <point x="0.846154" y="0.877729" />
+                            <point x="0.5" y="0.956332" />
+                            <point x="0.285714" y="0.772926" />
+                            <point x="0.197802" y="0.497817" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite42" sid="886588597765344">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="986084873011794" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\7. INSYAALLAH\1. GAME\picture\mee.png">
+                        <collision-poly>
+                            <point x="0.158537" y="0.158537" />
+                            <point x="0.5" y="0.0121951" />
+                            <point x="0.841463" y="0.158537" />
+                            <point x="0.987805" y="0.5" />
+                            <point x="0.841463" y="0.841463" />
+                            <point x="0.5" y="0.987805" />
+                            <point x="0.158537" y="0.841463" />
+                            <point x="0.0121951" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>game.xml</layout>
+        <layout>game2.xml</layout>
+        <layout>game3.xml</layout>
+        <layout>login.xml</layout>
+        <layout>login2.xml</layout>
+        <layout>login3.xml</layout>
+        <layout>cut.xml</layout>
+        <layout>Start.xml</layout>
+        <layout>map.xml</layout>
+        <layout>tambah.xml</layout>
+        <layout>tambah2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>ev_umum.xml</event-sheet>
+        <event-sheet>Globais.xml</event-sheet>
+        <event-sheet>ev_login.xml</event-sheet>
+        <event-sheet>ev_cut.xml</event-sheet>
+        <event-sheet>ev_Start.xml</event-sheet>
+        <event-sheet>ev_map.xml</event-sheet>
+        <event-sheet>ev_main.xml</event-sheet>
+        <event-sheet>ev_tambah.xml</event-sheet>
+        <event-sheet>ev_login2.xml</event-sheet>
+        <event-sheet>ev_loginmain.xml</event-sheet>
+        <event-sheet>ev_login3.xml</event-sheet>
+        <event-sheet>ev_game1.xml</event-sheet>
+        <event-sheet>ev_game2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Multiplayer" uid="5" />
+        <global-instance type="Keyboard" uid="6" />
+        <global-instance type="Mouse" uid="12" />
+        <global-instance type="Touch" uid="59">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="Audio" uid="58">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder>
+        <file name="prologii.ogg" />
+        <file name="INTROO.ogg" />
+        <file name="kalah.ogg" />
+        <file name="kudaa2an.ogg" />
+        <file name="nyawa berkurang.ogg" />
+        <file name="win.ogg" />
+    </music-folder>
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="full.mp4" />
+    </files-folder>
+</c2project>

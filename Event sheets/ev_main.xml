@@ -1,0 +1,893 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_main</name>
+    <events>
+        <variable constant="0" name="reload" sid="493691867252961" static="0" type="number">3</variable>
+        <event-block sid="233430745428903">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="948782426837360" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-group description="" sid="876926513078699" title="SIGNALLING">
+            <sub-events>
+                <event-block sid="354378620820918">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="957925171073625" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="15" name="Add client input value" sid="439420909845832" type="Multiplayer">
+                            <param id="0" name="Tag">&quot;inputs&quot;</param>
+                            <param id="1" name="Precision">3</param>
+                            <param id="2" name="Interpolation">0</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="240824392038250" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="111105202691879" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|inputs</param>
+                            <param id="2" name="Precision">3</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;inputs&quot;</param>
+                        </action>
+                        <action id="12" name="Sync instance variable" sid="291022203042213" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Instance variable">Player|animacao</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Interpolation">0</param>
+                            <param id="4" name="Client value tag">&quot;animacao&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="429259843118381" type="MessagemGame">
+                            <param id="0" name="Text">&quot;conexão com servidor de sinalização&quot;</param>
+                        </action>
+                        <action id="1" name="Connect" sid="548264479868758" type="Multiplayer">
+                            <param id="0" name="Server">&quot;wss://multiplayer.scirra.com&quot;</param>
+                        </action>
+                        <action id="11" name="Sync object" sid="894581249852468" type="Multiplayer">
+                            <param id="0" name="Object">bullet</param>
+                            <param id="1" name="Data">3</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="982419881562875" type="bullet" />
+                        <action id="11" name="Sync object" sid="143151499081515" type="Multiplayer">
+                            <param id="0" name="Object">sangue</param>
+                            <param id="1" name="Data">1</param>
+                            <param id="2" name="Precision">1</param>
+                            <param id="3" name="Bandwidth">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="649138632009930" type="sangue" />
+                    </actions>
+                    <sub-events>
+                        <event-block sid="838293169191535">
+                            <conditions>
+                                <condition id="12" inverted="1" name="Supports multiplayer" sid="564564514671927" type="Multiplayer" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="682976933670992" type="MessagemGame">
+                                    <param id="0" name="Text">&quot;Multiplayer não suportado pelo browser&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="270710449012552">
+                            <conditions>
+                                <condition id="12" name="Supports multiplayer" sid="851024043988008" type="Multiplayer" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="728831359326756" type="MessagemGame">
+                                    <param id="0" name="Text">&quot;Suporte a multiplayer ok&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="810705054617631">
+                    <conditions>
+                        <condition id="2" name="On connected" sid="839428158586774" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="594756569239120" type="MessagemGame">
+                            <param id="0" name="Text">&quot;conexão ok&quot;</param>
+                        </action>
+                        <action id="4" name="Log in" sid="767204017781964" type="Multiplayer">
+                            <param id="0" name="Alias">GAME_PLAYER_NAME</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="937583501045916">
+                    <conditions>
+                        <condition id="4" name="On logged in" sid="268346752599794" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="602015263029945" type="MessagemGame">
+                            <param id="0" name="Text">&quot;Entrando na sala&quot;</param>
+                        </action>
+                        <action id="5" name="Join room" sid="813204332978993" type="Multiplayer">
+                            <param id="0" name="Game">GAME_NAME</param>
+                            <param id="1" name="Instance">GAME_INSTANCE_NAME</param>
+                            <param id="2" name="Room">GAME_ROOM_NAME</param>
+                            <param id="3" name="Max peers">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="751411375633202">
+                    <conditions>
+                        <condition id="5" name="On joined room" sid="911886243936078" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="335490067303890" type="MessagemGame">
+                            <param id="0" name="Text">&quot;Entrada - ok&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="685469925167380">
+                            <conditions>
+                                <condition id="10" name="Is host" sid="674080065212383" type="Multiplayer" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="849748305274389" type="MessagemGame">
+                                    <param id="0" name="Text">&quot;Host - ok&quot;</param>
+                                </action>
+                                <action id="-10" name="Set value" sid="164023060691512" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Value">Multiplayer.MyID</param>
+                                </action>
+                                <action id="13" name="Associate object with peer" sid="734461508357565" type="Multiplayer">
+                                    <param id="0" name="Object">Player</param>
+                                    <param id="1" name="Peer ID">Multiplayer.MyID</param>
+                                </action>
+                                <action id="-12" name="Set group active" sid="198510040812158" type="System">
+                                    <param id="0" name="Group name">&quot;HOST&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block disabled="1" sid="478517690396859">
+                            <conditions>
+                                <condition id="10" inverted="1" name="Is host" sid="120473530642257" type="Multiplayer" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Set text" sid="178204217055935" type="MessagemGame">
+                                    <param id="0" name="Text">&quot;Peer - ok&quot;</param>
+                                </action>
+                                <action id="-9" name="Destroy" sid="901706099799424" type="Player" />
+                                <action id="-12" name="Set group active" sid="292153760120815" type="System">
+                                    <param id="0" name="Group name">&quot;PEER&quot;</param>
+                                    <param id="1" name="State">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="955982284811344" title="HOST">
+            <sub-events>
+                <event-block sid="830879013107303">
+                    <conditions>
+                        <condition id="-4" name="Trigger once while true" sid="509915902976914" type="System" />
+                        <condition id="-7" name="Compare instance variable" sid="775789893582417" type="Player">
+                            <param id="0" name="Instance variable">multiplayer_id</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">Multiplayer.MyID</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="452424600081752" type="cam">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y</param>
+                        </action>
+                        <action behavior="Pin" id="0" name="Pin to object" sid="518665012390286" type="cam">
+                            <param id="0" name="Pin to">Player</param>
+                            <param id="1" name="Mode">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="340161989323931">
+                    <conditions>
+                        <condition id="11" name="On peer connected" sid="901339526560229" type="Multiplayer" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Create object" sid="712432668522686" type="System">
+                            <param id="0" name="Object to create">Player</param>
+                            <param id="1" name="Layer">&quot;game&quot;</param>
+                            <param id="2" name="X">50</param>
+                            <param id="3" name="Y">50</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="495251759922132" type="Player">
+                            <param id="0" name="Instance variable">multiplayer_id</param>
+                            <param id="1" name="Value">Multiplayer.PeerID</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="807557703694115" type="Player">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="13" name="Associate object with peer" sid="660637969472983" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Peer ID">Multiplayer.PeerID</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="769010388918282" title="colisao">
+                    <sub-events>
+                        <event-block sid="297434766502307">
+                            <conditions>
+                                <condition id="0" name="On collision with another object" sid="735660718496256" type="bullet">
+                                    <param id="0" name="Object">Player</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="115930948166163">
+                                    <conditions>
+                                        <condition id="-7" name="Compare instance variable" sid="354110611012198" type="bullet">
+                                            <param id="0" name="Instance variable">multiplayer_id</param>
+                                            <param id="1" name="Comparison">1</param>
+                                            <param id="2" name="Value">Player.multiplayer_id</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="461745958969092" type="bullet" />
+                                        <action id="0" name="Spawn another object" sid="647566122461350" type="Player">
+                                            <param id="0" name="Object">sangue</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="Image point">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-group description="" sid="228224371633165" title="Controls">
+                    <sub-events>
+                        <event-block sid="538526848272550">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="955599360315622" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="642473585921312">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="697988919646476" type="Keyboard">
+                                            <param id="0" name="Key">65</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="336760024179422" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="190371632633500" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="551548802768473">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="964666170350248" type="Keyboard">
+                                            <param id="0" name="Key">68</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="358935724675264" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="607031950932128" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="124203050289168">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="755228200352776" type="Keyboard">
+                                            <param id="0" name="Key">83</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="357925250062214" type="Keyboard">
+                                            <param id="0" name="Key">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="384669354534443" type="Player">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="699806747011875">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="779866415564810" type="Keyboard">
+                                            <param id="0" name="Key">87</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="237771503110893" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="104497378252448" type="Player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="625928441874318">
+                                    <conditions>
+                                        <condition id="0" name="On key pressed" sid="868719736045323" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="678270583251669" type="Player">
+                                            <param id="0" name="Instance variable">arma1</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="0" name="Spawn another object" sid="302769142148201" type="Player">
+                                            <param id="0" name="Object">bullet</param>
+                                            <param id="1" name="Layer">&quot;game&quot;</param>
+                                            <param id="2" name="Image point">&quot;fire&quot;</param>
+                                        </action>
+                                        <action id="-10" name="Set value" sid="912433173189606" type="bullet">
+                                            <param id="0" name="Instance variable">multiplayer_id</param>
+                                            <param id="1" name="Value">Player.multiplayer_id</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                        <event-block sid="598422836586541">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="124399084011693" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">1</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Set value" sid="475011215803981" type="Player">
+                                    <param id="0" name="Instance variable">inputs</param>
+                                    <param id="1" name="Value">Multiplayer.PeerState(Multiplayer.PeerID,&quot;inputs&quot;)</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="896440438531436">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="939072853083620" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,0)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="340804813864920" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="393433481329695">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="652930040905721" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,1)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="422962236939778" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="670972103853855">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="519336254335519" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,2)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="132558733714880" type="Player">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="933731792194655">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="105086322097020" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,3)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="348115145428972" type="Player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="464459058473778">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="835421798667251" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,4)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="264179010738312">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="575720744377900" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="0" name="Spawn another object" sid="346488520744307" type="Player">
+                                                    <param id="0" name="Object">bullet</param>
+                                                    <param id="1" name="Layer">&quot;game&quot;</param>
+                                                    <param id="2" name="Image point">&quot;fire&quot;</param>
+                                                </action>
+                                                <action id="-10" name="Set value" sid="776282535404116" type="bullet">
+                                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                                    <param id="1" name="Value">Player.multiplayer_id</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <comment>Control pad</comment>
+                <event-block sid="950620422032233">
+                    <conditions />
+                    <actions>
+                        <action id="-3" name="Set position" sid="701097754565820" type="gamepad_middle">
+                            <param id="0" name="X">gamepad1.X</param>
+                            <param id="1" name="Y">gamepad1.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="399862504167845">
+                    <conditions>
+                        <condition behavior="DragDrop" id="0" name="Is dragging" sid="565369885863123" type="gamepad_middle" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="534991320489571" type="gamepad_middle">
+                            <param id="0" name="X">gamepad1.X</param>
+                            <param id="1" name="Y">gamepad1.Y</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="745284673500186" type="gamepad_middle">
+                            <param id="0" name="Angle">angle(gamepad_middle.X,gamepad_middle.Y,Touch.X, Touch.Y)</param>
+                        </action>
+                        <action id="-23" name="Move at angle" sid="128667020891040" type="gamepad_middle">
+                            <param id="0" name="Angle">Self.Angle</param>
+                            <param id="1" name="Distance">min(distance(Touch.X,Touch.Y,gamepad_middle.X, gamepad_middle.Y)/2,45)</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="361493227882285">
+                            <conditions>
+                                <condition id="-12" name="Is clockwise from" sid="117718507339472" type="gamepad_middle">
+                                    <param id="0" name="Angle">90</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="350393584773922" type="Player">
+                                    <param id="0" name="Control">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="205330768506492">
+                            <conditions>
+                                <condition id="-12" name="Is clockwise from" sid="557992995097331" type="gamepad_middle">
+                                    <param id="0" name="Angle">270</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="719373758106903" type="Player">
+                                    <param id="0" name="Control">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="612905198580753">
+                            <conditions>
+                                <condition id="-12" name="Is clockwise from" sid="467943296814686" type="gamepad_middle">
+                                    <param id="0" name="Angle">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="963490506925330" type="Player">
+                                    <param id="0" name="Control">3</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="833144643621407">
+                            <conditions>
+                                <condition id="-12" name="Is clockwise from" sid="737460043411528" type="gamepad_middle">
+                                    <param id="0" name="Angle">180</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action behavior="8Direction" id="7" name="Simulate control" sid="991031817311890" type="Player">
+                                    <param id="0" name="Control">2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" inactive="1" sid="952384912638270" title="PEER">
+            <sub-events>
+                <event-block sid="399262124658672">
+                    <conditions>
+                        <condition id="-18" name="On created" sid="846484386379012" type="Player" />
+                    </conditions>
+                    <actions>
+                        <action id="-10" name="Set value" sid="226698142200904" type="Player">
+                            <param id="0" name="Instance variable">multiplayer_id</param>
+                            <param id="1" name="Value">Multiplayer.PeerID</param>
+                        </action>
+                        <action id="13" name="Associate object with peer" sid="607551120576221" type="Multiplayer">
+                            <param id="0" name="Object">Player</param>
+                            <param id="1" name="Peer ID">Multiplayer.PeerID</param>
+                        </action>
+                        <action id="0" name="Set text" sid="665990921482471" type="jmobile2">
+                            <param id="0" name="Text">&quot;Conectando...&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="495892123658413">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="868853513636699" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.MyID</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="16" name="Enable local input prediction" sid="338729114226122" type="Multiplayer">
+                                    <param id="0" name="Object">Player</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="369518321695520" type="Player">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="-3" name="Set position" sid="543666983135009" type="cam">
+                                    <param id="0" name="X">Player.X</param>
+                                    <param id="1" name="Y">Player.Y</param>
+                                </action>
+                                <action behavior="Pin" id="0" name="Pin to object" sid="969292983379073" type="cam">
+                                    <param id="0" name="Pin to">Player</param>
+                                    <param id="1" name="Mode">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="742118819844239">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="519182245303113" type="jmobile2">
+                            <param id="0" name="Text to compare">&quot;&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                        <condition id="-4" name="Trigger once while true" sid="675056692864112" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="798156865173981" type="MessagemGame">
+                            <param id="0" name="Text">&quot;HOST Desconectado - fim de jogo...&quot;</param>
+                        </action>
+                        <action id="7" name="Disconnect" sid="912135813947992" type="Multiplayer" />
+                        <action id="2" name="Disconnect" sid="457414091029497" type="Multiplayer" />
+                        <action id="-12" name="Set group active" sid="516960142230640" type="System">
+                            <param id="0" name="Group name">&quot;PEER&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="529500786440478" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="313468324751340" type="System">
+                            <param id="0" name="Layout">login</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-group description="" sid="357632069906265" title="Controls peer">
+                    <sub-events>
+                        <event-block sid="962840001848588">
+                            <conditions>
+                                <condition id="17" name="On client update" sid="468965183691093" type="Multiplayer" />
+                                <condition id="-7" name="Compare instance variable" sid="812388161262032" type="Player">
+                                    <param id="0" name="Instance variable">multiplayer_id</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Multiplayer.myid</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block any="1" sid="472965469828575">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="909591244582597" type="Keyboard">
+                                            <param id="0" name="Key">65</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="917288074908818" type="Keyboard">
+                                            <param id="0" name="Key">37</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="254025032045310" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,0,1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="245799350943115">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="390234281955257" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="665770110406454" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,0,0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="824812646976591">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="980277488357908" type="Keyboard">
+                                            <param id="0" name="Key">68</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="385872245694900" type="Keyboard">
+                                            <param id="0" name="Key">39</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="624359189134568" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,1,1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="843133984057068">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="739946862909141" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="384372616801490" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,1,0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="660630704994411">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="479776005619224" type="Keyboard">
+                                            <param id="0" name="Key">83</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="195755546728474" type="Keyboard">
+                                            <param id="0" name="Key">40</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="576841427314334" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,2,1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="771146677256827">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="536585140375018" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="651377548521767" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,2,0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block any="1" sid="531570437153684">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="550113132065732" type="Keyboard">
+                                            <param id="0" name="Key">87</param>
+                                        </condition>
+                                        <condition id="2" name="Key is down" sid="197713271097608" type="Keyboard">
+                                            <param id="0" name="Key">38</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="819504461648256" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,3,1)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="793216840259279">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="777604651681865" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="484235844318904" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,3,0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="541976625093466">
+                                    <conditions>
+                                        <condition id="2" name="Key is down" sid="821602077522355" type="Keyboard">
+                                            <param id="0" name="Key">32</param>
+                                        </condition>
+                                        <condition id="-7" name="Compare instance variable" sid="689168991603907" type="Player">
+                                            <param id="0" name="Instance variable">arma1</param>
+                                            <param id="1" name="Comparison">4</param>
+                                            <param id="2" name="Value">0</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions />
+                                    <sub-events>
+                                        <event-block sid="842769776318380">
+                                            <conditions>
+                                                <condition id="-4" name="Trigger once while true" sid="485617581998957" type="System" />
+                                            </conditions>
+                                            <actions>
+                                                <action id="-10" name="Set value" sid="797821995856054" type="Player">
+                                                    <param id="0" name="Instance variable">inputs</param>
+                                                    <param id="1" name="Value">setbit(Self.inputs,4,1)</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                                <event-block sid="211263212370809">
+                                    <conditions>
+                                        <condition id="-22" name="Else" sid="974451780624169" type="System" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-10" name="Set value" sid="931410193082487" type="Player">
+                                            <param id="0" name="Instance variable">inputs</param>
+                                            <param id="1" name="Value">setbit(Self.inputs,4,0)</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="692901478768971">
+                                    <conditions />
+                                    <actions>
+                                        <action id="14" name="Set client state" sid="284869822356777" type="Multiplayer">
+                                            <param id="0" name="Tag">&quot;inputs&quot;</param>
+                                            <param id="1" name="Value">Player.inputs</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="561257566010140">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="716084916574193" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,0)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="167173619048001" type="Player">
+                                            <param id="0" name="Control">0</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="595770850805096">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="859973547256064" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,1)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="862068995654090" type="Player">
+                                            <param id="0" name="Control">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="196283543811077">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="577400055902035" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,2)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="834002954309417" type="Player">
+                                            <param id="0" name="Control">3</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                                <event-block sid="597673446185596">
+                                    <conditions>
+                                        <condition id="-8" name="Compare two values" sid="605639058973284" type="System">
+                                            <param id="0" name="First value">getbit(Player.inputs,3)</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Second value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="8Direction" id="7" name="Simulate control" sid="148369515288750" type="Player">
+                                            <param id="0" name="Control">2</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="129145571277522" title="COMMON">
+            <sub-events>
+                <event-block sid="503923514669084">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="441223933498449" type="bullet">
+                            <param id="0" name="Object">obj1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="469811616300764" type="bullet" />
+                    </actions>
+                </event-block>
+                <event-block sid="701300201840246">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="889788895463672" type="Player">
+                            <param id="0" name="Object">arma1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="246137177634595" type="Player">
+                            <param id="0" name="Instance variable">arma1</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="543416078639744" type="arma1" />
+                        <action id="-10" name="Set value" sid="486863260078643" type="Player">
+                            <param id="0" name="Instance variable">arma1</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="260879559845069" type="Player">
+                            <param id="0" name="Instance variable">animacao</param>
+                            <param id="1" name="Value">&quot;arma1&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="301467730917801">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="656808767407569" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="265571895264617" type="jmobile2">
+                            <param id="0" name="X">Player.X</param>
+                            <param id="1" name="Y">Player.Y - 40</param>
+                        </action>
+                        <action id="0" name="Set text" sid="957462621359408" type="jmobile2">
+                            <param id="0" name="Text">Multiplayer.PeerAliasFromID(Player.multiplayer_id)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="663835094528058">
+                    <conditions>
+                        <condition id="-11" name="For Each" sid="324533440043531" type="System">
+                            <param id="0" name="Object">Player</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="4" name="Set animation" sid="609619966485541" type="Player">
+                            <param id="0" name="Animation">Player.animacao</param>
+                            <param id="1" name="From">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

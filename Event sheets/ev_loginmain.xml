@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>ev_loginmain</name>
+    <events>
+        <variable constant="0" name="p5" sid="925933537715663" static="0" type="number">1086</variable>
+        <variable constant="0" name="p6" sid="531854512371036" static="0" type="number">-235</variable>
+        <variable constant="0" name="ket3" sid="112596025272182" static="0" type="text">belum</variable>
+        <event-block sid="252739029474582">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="924508173271035" type="System" />
+            </conditions>
+            <actions>
+                <action id="-21" name="Reset global variables" sid="177225692227766" type="System" />
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
